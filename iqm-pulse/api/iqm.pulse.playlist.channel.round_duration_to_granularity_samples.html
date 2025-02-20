@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>iqm.pulse.playlist.channel.round_duration_to_granularity_samples &#8212; iqm.pulse 7.22 documentation</title>
+    <title>iqm.pulse.playlist.channel.round_duration_to_granularity_samples &#8212; iqm.pulse 7.23 documentation</title>
   
   
   
@@ -41,7 +41,7 @@
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../_static/documentation_options.js?v=06aacdd1"></script>
+    <script src="../_static/documentation_options.js?v=65175d8a"></script>
     <script src="../_static/doctools.js?v=888ff710"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
@@ -53,8 +53,8 @@
     <link rel="prev" title="iqm.pulse.playlist.channel.get_channel_properties_from_station_settings" href="iqm.pulse.playlist.channel.get_channel_properties_from_station_settings.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="7.22" />
-    <meta name="docbuild:last-update" content="2025-02-19"/>
+  <meta name="docsearch:version" content="7.23" />
+    <meta name="docbuild:last-update" content="2025-02-20"/>
   </head>
   
   
@@ -133,8 +133,8 @@
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="iqm.pulse 7.22 documentation - Home"/>
-    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="iqm.pulse 7.22 documentation - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="iqm.pulse 7.23 documentation - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="iqm.pulse 7.23 documentation - Home"/>
   
   
 </a></div>
@@ -390,10 +390,10 @@
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>channels</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/collections.abc.html#collections.abc.Iterable" title="(in Python v3.11)"><em>Iterable</em></a><em>[</em><a class="reference internal" href="iqm.pulse.playlist.channel.ChannelProperties.html#iqm.pulse.playlist.channel.ChannelProperties" title="iqm.pulse.playlist.channel.ChannelProperties"><em>ChannelProperties</em></a><em>]</em>) – all these channels must be able to handle the rounded duration</p></li>
-<li><p><strong>duration</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – time duration in s</p></li>
-<li><p><strong>round_up</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – whether to round the duration up, or to the closest granularity</p></li>
-<li><p><strong>force_min_duration</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – whether to force the duration to be at least the largest <code class="docutils literal notranslate"><span class="pre">instruction_duration_min</span></code>
+<li><p><strong>channels</strong> (<em>Iterable</em><em>[</em><a class="reference internal" href="iqm.pulse.playlist.channel.ChannelProperties.html#iqm.pulse.playlist.channel.ChannelProperties" title="iqm.pulse.playlist.channel.ChannelProperties"><em>ChannelProperties</em></a><em>]</em>) – all these channels must be able to handle the rounded duration</p></li>
+<li><p><strong>duration</strong> (<em>float</em>) – time duration in s</p></li>
+<li><p><strong>round_up</strong> (<em>bool</em>) – whether to round the duration up, or to the closest granularity</p></li>
+<li><p><strong>force_min_duration</strong> (<em>bool</em>) – whether to force the duration to be at least the largest <code class="docutils literal notranslate"><span class="pre">instruction_duration_min</span></code>
 of <code class="docutils literal notranslate"><span class="pre">channels</span></code></p></li>
 </ul>
 </dd>
@@ -401,7 +401,7 @@ of <code class="docutils literal notranslate"><span class="pre">channels</span><
 <dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">duration</span></code> rounded to common channel granularity, in samples</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.11/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a></p>
+<dd class="field-odd"><p><em>int</em></p>
 </dd>
 </dl>
 </dd></dl>
@@ -484,7 +484,7 @@ of <code class="docutils literal notranslate"><span class="pre">channels</span><
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on 2025-02-19.
+  Last updated on 2025-02-20.
   <br/>
 </p>
   </div>

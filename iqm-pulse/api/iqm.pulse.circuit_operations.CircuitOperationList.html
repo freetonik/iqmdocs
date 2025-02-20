@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>CircuitOperationList &#8212; iqm.pulse 7.22 documentation</title>
+    <title>CircuitOperationList &#8212; iqm.pulse 7.23 documentation</title>
   
   
   
@@ -41,7 +41,7 @@
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../_static/documentation_options.js?v=06aacdd1"></script>
+    <script src="../_static/documentation_options.js?v=65175d8a"></script>
     <script src="../_static/doctools.js?v=888ff710"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
@@ -53,8 +53,8 @@
     <link rel="prev" title="iqm.pulse.circuit_operations.reshape_unitary" href="iqm.pulse.circuit_operations.reshape_unitary.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="7.22" />
-    <meta name="docbuild:last-update" content="2025-02-19"/>
+  <meta name="docsearch:version" content="7.23" />
+    <meta name="docbuild:last-update" content="2025-02-20"/>
   </head>
   
   
@@ -133,8 +133,8 @@
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="iqm.pulse 7.22 documentation - Home"/>
-    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="iqm.pulse 7.22 documentation - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="iqm.pulse 7.23 documentation - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="iqm.pulse 7.23 documentation - Home"/>
   
   
 </a></div>
@@ -393,7 +393,7 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="iqm.pulse.circuit_operations.CircuitOperationList">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">iqm.pulse.circuit_operations.</span></span><span class="sig-name descname"><span class="pre">CircuitOperationList</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">contents</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">qubits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_qubits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">table</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iqm.pulse.circuit_operations.CircuitOperationList" title="Link to this definition">#</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#list" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></a></p>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></p>
 <p>List of <a class="reference internal" href="iqm.pulse.builder.CircuitOperation.html#iqm.pulse.builder.CircuitOperation" title="iqm.pulse.builder.CircuitOperation"><code class="xref py py-class docutils literal notranslate"><span class="pre">CircuitOperation</span></code></a> objects representing a quantum circuit.</p>
 <p>The class is used to work with CircuitOperations directly. It is mostly meant as
 convenience to enable easy creation of circuits, calculations of their properties, and mapping them onto physical
@@ -468,8 +468,8 @@ different physical qubits, which is helpful when running parallel experiments on
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>contents</strong> (<em>Iterable</em><em>[</em><a class="reference internal" href="iqm.pulse.builder.CircuitOperation.html#iqm.pulse.builder.CircuitOperation" title="iqm.pulse.builder.CircuitOperation"><em>CircuitOperation</em></a><em>]</em>) – Circuit operations to initialize the circuit with. Can be left out.</p></li>
-<li><p><strong>qubits</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>]</em>) – Qubits allowed to be used in operation loci in the circuit.</p></li>
-<li><p><strong>num_qubits</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – Number of qubits in the circuit, will initialize <code class="docutils literal notranslate"><span class="pre">qubits</span></code> with <code class="docutils literal notranslate"><span class="pre">['QB1',</span> <span class="pre">'QB2',</span> <span class="pre">...]</span></code>.
+<li><p><strong>qubits</strong> (<em>list</em><em>[</em><em>str</em><em>]</em>) – Qubits allowed to be used in operation loci in the circuit.</p></li>
+<li><p><strong>num_qubits</strong> (<em>int</em>) – Number of qubits in the circuit, will initialize <code class="docutils literal notranslate"><span class="pre">qubits</span></code> with <code class="docutils literal notranslate"><span class="pre">['QB1',</span> <span class="pre">'QB2',</span> <span class="pre">...]</span></code>.
 Ignored if <code class="docutils literal notranslate"><span class="pre">qubits</span></code> is given.</p></li>
 <li><p><strong>table</strong> (<em>QuantumOpTable</em><em> | </em><em>None</em>) – Allowed quantum operations.</p></li>
 </ul>
@@ -532,7 +532,7 @@ Ignored if <code class="docutils literal notranslate"><span class="pre">qubits</
 <dd><p>Adds generic placeholder qubits from 1 to n.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>n</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – </p>
+<dd class="field-odd"><p><strong>n</strong> (<em>int</em>) – </p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><em>None</em></p>
@@ -548,7 +548,7 @@ Ignored if <code class="docutils literal notranslate"><span class="pre">qubits</
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>self</strong> – list of CircuitOperations in order</p></li>
-<li><p><strong>qubit_names</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>] </em><em>| </em><em>None</em>) – Optionally, the ordering of the qubits.</p></li>
+<li><p><strong>qubit_names</strong> (<em>list</em><em>[</em><em>str</em><em>] </em><em>| </em><em>None</em>) – Optionally, the ordering of the qubits.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -575,10 +575,10 @@ params of the requested <a class="reference internal" href="iqm.pulse.quantum_op
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Name of the <code class="xref py py-class docutils literal notranslate"><span class="pre">QuantumOp</span></code> which will generate a new <code class="xref py py-class docutils literal notranslate"><span class="pre">CircuitOperation</span></code>.</p></li>
-<li><p><strong>locus_indices</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/collections.abc.html#collections.abc.Sequence" title="(in Python v3.11)"><em>Sequence</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>]</em>) – Indices of the qubits in the attribute .qubits which will become the locus of the operation.</p></li>
+<li><p><strong>name</strong> (<em>str</em>) – Name of the <code class="xref py py-class docutils literal notranslate"><span class="pre">QuantumOp</span></code> which will generate a new <code class="xref py py-class docutils literal notranslate"><span class="pre">CircuitOperation</span></code>.</p></li>
+<li><p><strong>locus_indices</strong> (<em>Sequence</em><em>[</em><em>int</em><em>]</em>) – Indices of the qubits in the attribute .qubits which will become the locus of the operation.</p></li>
 <li><p><strong>args</strong> – Any arguments the CircuitOperation needs, must correspond to the params of the <code class="xref py py-class docutils literal notranslate"><span class="pre">QuantumOp</span></code>.</p></li>
-<li><p><strong>impl_name</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em> | </em><em>None</em>) – Name of the implementation to use when converting the <code class="xref py py-class docutils literal notranslate"><span class="pre">CircuitOperation</span></code> into
+<li><p><strong>impl_name</strong> (<em>str</em><em> | </em><em>None</em>) – Name of the implementation to use when converting the <code class="xref py py-class docutils literal notranslate"><span class="pre">CircuitOperation</span></code> into
 a <code class="xref py py-class docutils literal notranslate"><span class="pre">Timebox</span></code> later.</p></li>
 </ul>
 </dd>
@@ -613,7 +613,7 @@ their <code class="docutils literal notranslate"><span class="pre">'QB3'</span><
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>other</strong> – Second CircuitOperationList. Must have less or equal qubits than this one.</p></li>
-<li><p><strong>locus_indices</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>] </em><em>| </em><em>None</em>) – Indices of the qubits in this CircuitOperationList onto which the qubits in the second
+<li><p><strong>locus_indices</strong> (<em>list</em><em>[</em><em>int</em><em>] </em><em>| </em><em>None</em>) – Indices of the qubits in this CircuitOperationList onto which the qubits in the second
 circuit ar mapped.</p></li>
 </ul>
 </dd>
@@ -621,7 +621,7 @@ circuit ar mapped.</p></li>
 <dd class="field-even"><p>Self, with new operations added.</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.11/library/typing.html#typing.Self" title="(in Python v3.11)"><em>Self</em></a></p>
+<dd class="field-odd"><p><em>Self</em></p>
 </dd>
 </dl>
 </dd></dl>
@@ -635,7 +635,7 @@ circuit ar mapped.</p></li>
 <dd class="field-odd"><p>Counter mapping operation names to numbers of times they occur in the circuit.</p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.11/library/collections.html#collections.Counter" title="(in Python v3.11)"><em>Counter</em></a></p>
+<dd class="field-even"><p><em>Counter</em></p>
 </dd>
 </dl>
 </dd></dl>
@@ -651,15 +651,15 @@ of the original list.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>locus</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>] </em><em>| </em><em>None</em>) – List of new qubits to replace the qubits in the loci of the operations in the circuit.</p></li>
-<li><p><strong>make_circuit</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – If True, creates a <a class="reference internal" href="#iqm.pulse.circuit_operations.CircuitOperationList" title="iqm.pulse.circuit_operations.CircuitOperationList"><code class="xref py py-class docutils literal notranslate"><span class="pre">CircuitOperationList</span></code></a>. If False, it is just a list.</p></li>
+<li><p><strong>locus</strong> (<em>list</em><em>[</em><em>str</em><em>] </em><em>| </em><em>None</em>) – List of new qubits to replace the qubits in the loci of the operations in the circuit.</p></li>
+<li><p><strong>make_circuit</strong> (<em>bool</em>) – If True, creates a <a class="reference internal" href="#iqm.pulse.circuit_operations.CircuitOperationList" title="iqm.pulse.circuit_operations.CircuitOperationList"><code class="xref py py-class docutils literal notranslate"><span class="pre">CircuitOperationList</span></code></a>. If False, it is just a list.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>New CircuitOperationList with loci mapped onto new locus.</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference internal" href="#iqm.pulse.circuit_operations.CircuitOperationList" title="iqm.pulse.circuit_operations.CircuitOperationList"><em>CircuitOperationList</em></a> | <a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a>[<a class="reference internal" href="iqm.pulse.builder.CircuitOperation.html#iqm.pulse.builder.CircuitOperation" title="iqm.pulse.builder.CircuitOperation"><em>CircuitOperation</em></a>]</p>
+<dd class="field-odd"><p><a class="reference internal" href="#iqm.pulse.circuit_operations.CircuitOperationList" title="iqm.pulse.circuit_operations.CircuitOperationList"><em>CircuitOperationList</em></a> | <em>list</em>[<a class="reference internal" href="iqm.pulse.builder.CircuitOperation.html#iqm.pulse.builder.CircuitOperation" title="iqm.pulse.builder.CircuitOperation"><em>CircuitOperation</em></a>]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -670,7 +670,7 @@ of the original list.</p>
 <dd><p>Add the convenience methods for adding new operations, based on the default <code class="xref py py-class docutils literal notranslate"><span class="pre">QuantumOpTable</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – </p>
+<dd class="field-odd"><p><strong>name</strong> (<em>str</em>) – </p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><em>None</em></p>
@@ -769,7 +769,7 @@ of the original list.</p>
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on 2025-02-19.
+  Last updated on 2025-02-20.
   <br/>
 </p>
   </div>

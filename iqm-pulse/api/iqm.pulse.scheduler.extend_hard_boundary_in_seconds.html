@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>iqm.pulse.scheduler.extend_hard_boundary_in_seconds &#8212; iqm.pulse 7.22 documentation</title>
+    <title>iqm.pulse.scheduler.extend_hard_boundary_in_seconds &#8212; iqm.pulse 7.23 documentation</title>
   
   
   
@@ -41,7 +41,7 @@
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../_static/documentation_options.js?v=06aacdd1"></script>
+    <script src="../_static/documentation_options.js?v=65175d8a"></script>
     <script src="../_static/doctools.js?v=888ff710"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
@@ -53,8 +53,8 @@
     <link rel="prev" title="iqm.pulse.scheduler.extend_hard_boundary" href="iqm.pulse.scheduler.extend_hard_boundary.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="7.22" />
-    <meta name="docbuild:last-update" content="2025-02-19"/>
+  <meta name="docsearch:version" content="7.23" />
+    <meta name="docbuild:last-update" content="2025-02-20"/>
   </head>
   
   
@@ -133,8 +133,8 @@
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="iqm.pulse 7.22 documentation - Home"/>
-    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="iqm.pulse 7.22 documentation - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="iqm.pulse 7.23 documentation - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="iqm.pulse 7.23 documentation - Home"/>
   
   
 </a></div>
@@ -391,17 +391,17 @@ is in seconds.</p>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>schedule</strong> (<a class="reference internal" href="iqm.pulse.playlist.schedule.Schedule.html#iqm.pulse.playlist.schedule.Schedule" title="iqm.pulse.playlist.schedule.Schedule"><em>Schedule</em></a>) – Schedule that should be extended with <code class="docutils literal notranslate"><span class="pre">child_schedule</span></code>. Modified in place.</p></li>
 <li><p><strong>child_schedule</strong> (<a class="reference internal" href="iqm.pulse.playlist.schedule.Schedule.html#iqm.pulse.playlist.schedule.Schedule" title="iqm.pulse.playlist.schedule.Schedule"><em>Schedule</em></a>) – Child schedule to be added.</p></li>
-<li><p><strong>child_components</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#set" title="(in Python v3.11)"><em>set</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>]</em>) – Components (qubits, couplers, computational_resonators) that have at least
+<li><p><strong>child_components</strong> (<em>set</em><em>[</em><em>str</em><em>]</em>) – Components (qubits, couplers, computational_resonators) that have at least
 one channel in <code class="docutils literal notranslate"><span class="pre">child_schedule</span></code>.</p></li>
-<li><p><strong>neighborhood_components</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#set" title="(in Python v3.11)"><em>set</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>]</em>) – Components neighboring the <code class="docutils literal notranslate"><span class="pre">child_components</span></code> that should
+<li><p><strong>neighborhood_components</strong> (<em>set</em><em>[</em><em>str</em><em>]</em>) – Components neighboring the <code class="docutils literal notranslate"><span class="pre">child_components</span></code> that should
 additionally be blocked in the scheduling.</p></li>
-<li><p><strong>component_durations</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><em>dict</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3.11/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>]</em>) – Blocked durations for each component in <code class="docutils literal notranslate"><span class="pre">schedule</span></code>.
+<li><p><strong>component_durations</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>float</em><em>]</em>) – Blocked durations for each component in <code class="docutils literal notranslate"><span class="pre">schedule</span></code>.
 These act as the earliest starting points for new segment added to any of the channels
 of a given component, but will also block the component even if it has no occupied channels
 in the schedule yet or ever (e.g. a computational resonator).
 The durations are in seconds. Modified in place.</p></li>
-<li><p><strong>is_alap</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – Whether the scheduling strategy is ALAP (As Late As Possible).</p></li>
-<li><p><strong>channel_properties</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><em>dict</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><a class="reference internal" href="iqm.pulse.playlist.channel.ChannelProperties.html#iqm.pulse.playlist.channel.ChannelProperties" title="iqm.pulse.playlist.channel.ChannelProperties"><em>ChannelProperties</em></a><em>]</em>) – Mapping from channel name to its properties (e.g. the sample rates
+<li><p><strong>is_alap</strong> (<em>bool</em>) – Whether the scheduling strategy is ALAP (As Late As Possible).</p></li>
+<li><p><strong>channel_properties</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><a class="reference internal" href="iqm.pulse.playlist.channel.ChannelProperties.html#iqm.pulse.playlist.channel.ChannelProperties" title="iqm.pulse.playlist.channel.ChannelProperties"><em>ChannelProperties</em></a><em>]</em>) – Mapping from channel name to its properties (e.g. the sample rates
 and granularities).</p></li>
 </ul>
 </dd>
@@ -489,7 +489,7 @@ and granularities).</p></li>
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on 2025-02-19.
+  Last updated on 2025-02-20.
   <br/>
 </p>
   </div>

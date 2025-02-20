@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>TimeBox &#8212; iqm.pulse 7.22 documentation</title>
+    <title>TimeBox &#8212; iqm.pulse 7.23 documentation</title>
   
   
   
@@ -41,7 +41,7 @@
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../_static/documentation_options.js?v=06aacdd1"></script>
+    <script src="../_static/documentation_options.js?v=65175d8a"></script>
     <script src="../_static/doctools.js?v=888ff710"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
@@ -53,8 +53,8 @@
     <link rel="prev" title="SchedulingStrategy" href="iqm.pulse.timebox.SchedulingStrategy.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="7.22" />
-    <meta name="docbuild:last-update" content="2025-02-19"/>
+  <meta name="docsearch:version" content="7.23" />
+    <meta name="docbuild:last-update" content="2025-02-20"/>
   </head>
   
   
@@ -133,8 +133,8 @@
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="iqm.pulse 7.22 documentation - Home"/>
-    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="iqm.pulse 7.22 documentation - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="iqm.pulse 7.23 documentation - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="iqm.pulse 7.23 documentation - Home"/>
   
   
 </a></div>
@@ -397,7 +397,7 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="iqm.pulse.timebox.TimeBox">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">iqm.pulse.timebox.</span></span><span class="sig-name descname"><span class="pre">TimeBox</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">locus_components</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">atom</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">children=&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scheduling=SchedulingStrategy.ASAP</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scheduling_algorithm=SchedulingAlgorithm.HARD_BOUNDARY</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">neighborhood_components=&lt;factory&gt;</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iqm.pulse.timebox.TimeBox" title="Link to this definition">#</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.11/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Container for one or more instruction schedule fragments, to be scheduled according to a given strategy.</p>
 <p>Each TimeBox can be labeled using a human-readable <em>label</em> describing it, and operates on a number
 of <em>locus components</em>, using some of their control channels.  It can be either <em>atomic</em> or
@@ -486,25 +486,25 @@ The time duration of the box is determined by its contents and the way they are 
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>label</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – </p></li>
-<li><p><strong>locus_components</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#set" title="(in Python v3.11)"><em>set</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>]</em>) – </p></li>
+<li><p><strong>label</strong> (<em>str</em>) – </p></li>
+<li><p><strong>locus_components</strong> (<em>set</em><em>[</em><em>str</em><em>]</em>) – </p></li>
 <li><p><strong>atom</strong> (<a class="reference internal" href="iqm.pulse.playlist.schedule.Schedule.html#iqm.pulse.playlist.schedule.Schedule" title="iqm.pulse.playlist.schedule.Schedule"><em>Schedule</em></a><em> | </em><em>None</em>) – </p></li>
-<li><p><strong>children</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#tuple" title="(in Python v3.11)"><em>tuple</em></a><em>[</em><a class="reference internal" href="#iqm.pulse.timebox.TimeBox" title="iqm.pulse.timebox.TimeBox"><em>TimeBox</em></a><em>, </em><em>...</em><em>]</em>) – </p></li>
+<li><p><strong>children</strong> (<em>tuple</em><em>[</em><a class="reference internal" href="#iqm.pulse.timebox.TimeBox" title="iqm.pulse.timebox.TimeBox"><em>TimeBox</em></a><em>, </em><em>...</em><em>]</em>) – </p></li>
 <li><p><strong>scheduling</strong> (<a class="reference internal" href="iqm.pulse.timebox.SchedulingStrategy.html#iqm.pulse.timebox.SchedulingStrategy" title="iqm.pulse.timebox.SchedulingStrategy"><em>SchedulingStrategy</em></a>) – </p></li>
 <li><p><strong>scheduling_algorithm</strong> (<a class="reference internal" href="iqm.pulse.timebox.SchedulingAlgorithm.html#iqm.pulse.timebox.SchedulingAlgorithm" title="iqm.pulse.timebox.SchedulingAlgorithm"><em>SchedulingAlgorithm</em></a>) – </p></li>
-<li><p><strong>neighborhood_components</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><em>dict</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#set" title="(in Python v3.11)"><em>set</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>]</em><em>]</em>) – </p></li>
+<li><p><strong>neighborhood_components</strong> (<em>dict</em><em>[</em><em>int</em><em>, </em><em>set</em><em>[</em><em>str</em><em>]</em><em>]</em>) – </p></li>
 </ul>
 </dd>
 </dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="iqm.pulse.timebox.TimeBox.label">
-<span class="sig-name descname"><span class="pre">label</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></em><a class="headerlink" href="#iqm.pulse.timebox.TimeBox.label" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">label</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#iqm.pulse.timebox.TimeBox.label" title="Link to this definition">#</a></dt>
 <dd><p>Description the contents of the box for users’ convenience. Has no functional effect.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="iqm.pulse.timebox.TimeBox.locus_components">
-<span class="sig-name descname"><span class="pre">locus_components</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#set" title="(in Python v3.11)"><span class="pre">set</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#iqm.pulse.timebox.TimeBox.locus_components" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">locus_components</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">set</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#iqm.pulse.timebox.TimeBox.locus_components" title="Link to this definition">#</a></dt>
 <dd><p>Names of the QPU components on which this timebox operates. These can include additional components
 to the ones included in one of the channels occupied by this <code class="docutils literal notranslate"><span class="pre">TimeBox</span></code>. The components included in this
 attribute will be blocked in scheduling, in addition to the ones dictated by the neighborhood range (see
@@ -513,13 +513,13 @@ attribute will be blocked in scheduling, in addition to the ones dictated by the
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="iqm.pulse.timebox.TimeBox.atom">
-<span class="sig-name descname"><span class="pre">atom</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="iqm.pulse.playlist.schedule.Schedule.html#iqm.pulse.playlist.schedule.Schedule" title="iqm.pulse.playlist.schedule.Schedule"><span class="pre">Schedule</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></em><a class="headerlink" href="#iqm.pulse.timebox.TimeBox.atom" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">atom</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="iqm.pulse.playlist.schedule.Schedule.html#iqm.pulse.playlist.schedule.Schedule" title="iqm.pulse.playlist.schedule.Schedule"><span class="pre">Schedule</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#iqm.pulse.timebox.TimeBox.atom" title="Link to this definition">#</a></dt>
 <dd><p>Resolved contents of the TimeBox, or None if not resolved.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="iqm.pulse.timebox.TimeBox.children">
-<span class="sig-name descname"><span class="pre">children</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#tuple" title="(in Python v3.11)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#iqm.pulse.timebox.TimeBox" title="iqm.pulse.timebox.TimeBox"><span class="pre">TimeBox</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#iqm.pulse.timebox.TimeBox.children" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">children</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#iqm.pulse.timebox.TimeBox" title="iqm.pulse.timebox.TimeBox"><span class="pre">TimeBox</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#iqm.pulse.timebox.TimeBox.children" title="Link to this definition">#</a></dt>
 <dd><p>Further Timeboxes inside this TimeBox.</p>
 </dd></dl>
 
@@ -538,7 +538,7 @@ Has no meaning for an atomic TimeBox.</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="iqm.pulse.timebox.TimeBox.neighborhood_components">
-<span class="sig-name descname"><span class="pre">neighborhood_components</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.11/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#set" title="(in Python v3.11)"><span class="pre">set</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#iqm.pulse.timebox.TimeBox.neighborhood_components" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">neighborhood_components</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">set</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#iqm.pulse.timebox.TimeBox.neighborhood_components" title="Link to this definition">#</a></dt>
 <dd><p>Dict of neighborhood range integers mapped to sets of components neighboring the locus of this <code class="docutils literal notranslate"><span class="pre">TimeBox</span></code>.
 These are used in the scheduling when the corresponding neighborhood range is used.
 The scheduling algorithm computes the neighborhood components (unless it has been already precomputed by
@@ -556,9 +556,9 @@ this <code class="docutils literal notranslate"><span class="pre">TimeBox</span>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>boxes</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/typing.html#typing.Iterable" title="(in Python v3.11)"><em>Iterable</em></a><em>[</em><a class="reference internal" href="#iqm.pulse.timebox.TimeBox" title="iqm.pulse.timebox.TimeBox"><em>TimeBox</em></a><em> | </em><a class="reference external" href="https://docs.python.org/3.11/library/typing.html#typing.Iterable" title="(in Python v3.11)"><em>Iterable</em></a><em>[</em><a class="reference internal" href="#iqm.pulse.timebox.TimeBox" title="iqm.pulse.timebox.TimeBox"><em>TimeBox</em></a><em>]</em><em>]</em>) – contents of the new timebox. Any iterables of timeboxes will be flattened (recursively) and extended
+<li><p><strong>boxes</strong> (<em>Iterable</em><em>[</em><a class="reference internal" href="#iqm.pulse.timebox.TimeBox" title="iqm.pulse.timebox.TimeBox"><em>TimeBox</em></a><em> | </em><em>Iterable</em><em>[</em><a class="reference internal" href="#iqm.pulse.timebox.TimeBox" title="iqm.pulse.timebox.TimeBox"><em>TimeBox</em></a><em>]</em><em>]</em>) – contents of the new timebox. Any iterables of timeboxes will be flattened (recursively) and extended
 to the contents in the same order.</p></li>
-<li><p><strong>label</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – label of the new timebox</p></li>
+<li><p><strong>label</strong> (<em>str</em>) – label of the new timebox</p></li>
 <li><p><strong>scheduling</strong> (<a class="reference internal" href="iqm.pulse.timebox.SchedulingStrategy.html#iqm.pulse.timebox.SchedulingStrategy" title="iqm.pulse.timebox.SchedulingStrategy"><em>SchedulingStrategy</em></a>) – scheduling strategy to use when resolving the new timebox</p></li>
 <li><p><strong>scheduling_algorithm</strong> (<a class="reference internal" href="iqm.pulse.timebox.SchedulingAlgorithm.html#iqm.pulse.timebox.SchedulingAlgorithm" title="iqm.pulse.timebox.SchedulingAlgorithm"><em>SchedulingAlgorithm</em></a>) – scheduling algorithm to use when resolving the new timebox</p></li>
 </ul>
@@ -580,8 +580,8 @@ to the contents in the same order.</p></li>
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>schedule</strong> (<a class="reference internal" href="iqm.pulse.playlist.schedule.Schedule.html#iqm.pulse.playlist.schedule.Schedule" title="iqm.pulse.playlist.schedule.Schedule"><em>Schedule</em></a>) – contents of the new timebox</p></li>
-<li><p><strong>locus_components</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/typing.html#typing.Iterable" title="(in Python v3.11)"><em>Iterable</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>]</em>) – names QPU components <code class="docutils literal notranslate"><span class="pre">schedule</span></code> operates on</p></li>
-<li><p><strong>label</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – label of the new timebox</p></li>
+<li><p><strong>locus_components</strong> (<em>Iterable</em><em>[</em><em>str</em><em>]</em>) – names QPU components <code class="docutils literal notranslate"><span class="pre">schedule</span></code> operates on</p></li>
+<li><p><strong>label</strong> (<em>str</em>) – label of the new timebox</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -599,7 +599,7 @@ to the contents in the same order.</p></li>
 <dd><p>Validate the contents of the TimeBox.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>path</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#tuple" title="(in Python v3.11)"><em>tuple</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>...</em><em>]</em>) – Labels of ancestor boxes, to generate a better error message.</p>
+<dd class="field-odd"><p><strong>path</strong> (<em>tuple</em><em>[</em><em>str</em><em>, </em><em>...</em><em>]</em>) – Labels of ancestor boxes, to generate a better error message.</p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><em>None</em></p>
@@ -635,7 +635,7 @@ to the contents in the same order.</p></li>
 <dd><p>Print a simple representation of the contents of this box.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>_idxs</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#tuple" title="(in Python v3.11)"><em>tuple</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><em>...</em><em>]</em>) – </p>
+<dd class="field-odd"><p><strong>_idxs</strong> (<em>tuple</em><em>[</em><em>int</em><em>, </em><em>...</em><em>]</em>) – </p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><em>None</em></p>
@@ -738,7 +738,7 @@ to the contents in the same order.</p></li>
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on 2025-02-19.
+  Last updated on 2025-02-20.
   <br/>
 </p>
   </div>

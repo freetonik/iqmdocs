@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>GateImplementation &#8212; iqm.pulse 7.22 documentation</title>
+    <title>GateImplementation &#8212; iqm.pulse 7.23 documentation</title>
   
   
   
@@ -41,7 +41,7 @@
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../_static/documentation_options.js?v=06aacdd1"></script>
+    <script src="../_static/documentation_options.js?v=65175d8a"></script>
     <script src="../_static/doctools.js?v=888ff710"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
@@ -53,8 +53,8 @@
     <link rel="prev" title="CustomIQWaveforms" href="iqm.pulse.gate_implementation.CustomIQWaveforms.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="7.22" />
-    <meta name="docbuild:last-update" content="2025-02-19"/>
+  <meta name="docsearch:version" content="7.23" />
+    <meta name="docbuild:last-update" content="2025-02-20"/>
   </head>
   
   
@@ -133,8 +133,8 @@
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="iqm.pulse 7.22 documentation - Home"/>
-    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="iqm.pulse 7.22 documentation - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="iqm.pulse 7.23 documentation - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="iqm.pulse 7.23 documentation - Home"/>
   
   
 </a></div>
@@ -397,7 +397,7 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="iqm.pulse.gate_implementation.GateImplementation">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">iqm.pulse.gate_implementation.</span></span><span class="sig-name descname"><span class="pre">GateImplementation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parent</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">locus</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calibration_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">builder</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iqm.pulse.gate_implementation.GateImplementation" title="Link to this definition">#</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.11/library/abc.html#abc.ABC" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></a></p>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
 <p>ABC for implementing quantum gates and other quantum operations using instruction schedules.</p>
 <p>There is a separate GateImplementation subclass for every implementation of every operation type.
 Each GateImplementation instance represents a particular locus for that implementation, and encapsulates
@@ -411,7 +411,7 @@ an instance of the operation at that locus.</p>
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>parent</strong> (<a class="reference internal" href="iqm.pulse.quantum_ops.QuantumOp.html#iqm.pulse.quantum_ops.QuantumOp" title="iqm.pulse.quantum_ops.QuantumOp"><em>QuantumOp</em></a>) – Quantum operation this instance implements.</p></li>
-<li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – Name of the implementation provided by this instance.</p></li>
+<li><p><strong>name</strong> (<em>str</em>) – Name of the implementation provided by this instance.</p></li>
 <li><p><strong>locus</strong> (<em>Locus</em>) – Locus the operation acts on.</p></li>
 <li><p><strong>calibration_data</strong> (<em>OILCalibrationData</em>) – (Raw) calibration data for the (operation, implementation, locus) represented by this instance</p></li>
 <li><p><strong>builder</strong> (<a class="reference internal" href="iqm.pulse.builder.ScheduleBuilder.html#iqm.pulse.builder.ScheduleBuilder" title="iqm.pulse.builder.ScheduleBuilder"><em>ScheduleBuilder</em></a>) – Schedule builder.</p></li>
@@ -469,27 +469,27 @@ an instance of the operation at that locus.</p>
 </div>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="iqm.pulse.gate_implementation.GateImplementation.symmetric">
-<span class="sig-name descname"><span class="pre">symmetric</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#iqm.pulse.gate_implementation.GateImplementation.symmetric" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">symmetric</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#iqm.pulse.gate_implementation.GateImplementation.symmetric" title="Link to this definition">#</a></dt>
 <dd><p>True iff the implementation is symmetric in its locus components.
 Only meaningful if <code class="docutils literal notranslate"><span class="pre">arity</span> <span class="pre">!=</span> <span class="pre">1</span></code>, and the locus components are of the same type.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="iqm.pulse.gate_implementation.GateImplementation.parameters">
-<span class="sig-name descname"><span class="pre">parameters</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Parameter</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Setting</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><span class="pre">dict</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#iqm.pulse.gate_implementation.GateImplementation.parameters" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">parameters</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Parameter</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Setting</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#iqm.pulse.gate_implementation.GateImplementation.parameters" title="Link to this definition">#</a></dt>
 <dd><p>Required calibration data, may be nested</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="iqm.pulse.gate_implementation.GateImplementation.special_implementation">
-<span class="sig-name descname"><span class="pre">special_implementation</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#iqm.pulse.gate_implementation.GateImplementation.special_implementation" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">special_implementation</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#iqm.pulse.gate_implementation.GateImplementation.special_implementation" title="Link to this definition">#</a></dt>
 <dd><p>Set to <code class="docutils literal notranslate"><span class="pre">True</span></code> if  the implementation is a special purpose implementation that should never get called in
 <code class="docutils literal notranslate"><span class="pre">ScheduleBuilder.get_implementation</span></code> unless explicitly requested via the <code class="docutils literal notranslate"><span class="pre">impl_name</span></code> argument.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="iqm.pulse.gate_implementation.GateImplementation.qualified_name">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">qualified_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></em><a class="headerlink" href="#iqm.pulse.gate_implementation.GateImplementation.qualified_name" title="Link to this definition">#</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">qualified_name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#iqm.pulse.gate_implementation.GateImplementation.qualified_name" title="Link to this definition">#</a></dt>
 <dd><p>Qualified name of the implementation.</p>
 </dd></dl>
 
@@ -501,7 +501,7 @@ Only meaningful if <code class="docutils literal notranslate"><span class="pre">
 &lt;operation name&gt;: &lt;implementation name&gt;: &lt;appropriate locus&gt; in order to use this implementation.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.11/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a></p>
+<dd class="field-odd"><p><em>bool</em></p>
 </dd>
 </dl>
 </dd></dl>
@@ -514,7 +514,7 @@ Only meaningful if <code class="docutils literal notranslate"><span class="pre">
 in the signature) is sufficient. Any additional caching may also be implemented inside this function if needed.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference internal" href="iqm.pulse.timebox.TimeBox.html#iqm.pulse.timebox.TimeBox" title="iqm.pulse.timebox.TimeBox"><em>TimeBox</em></a> | <a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a>[<a class="reference internal" href="iqm.pulse.timebox.TimeBox.html#iqm.pulse.timebox.TimeBox" title="iqm.pulse.timebox.TimeBox"><em>TimeBox</em></a>]</p>
+<dd class="field-odd"><p><a class="reference internal" href="iqm.pulse.timebox.TimeBox.html#iqm.pulse.timebox.TimeBox" title="iqm.pulse.timebox.TimeBox"><em>TimeBox</em></a> | <em>list</em>[<a class="reference internal" href="iqm.pulse.timebox.TimeBox.html#iqm.pulse.timebox.TimeBox" title="iqm.pulse.timebox.TimeBox"><em>TimeBox</em></a>]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -527,10 +527,10 @@ in the signature) is sufficient. Any additional caching may also be implemented 
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>op_name</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – operation name</p></li>
-<li><p><strong>locus</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#tuple" title="(in Python v3.11)"><em>tuple</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>...</em><em>]</em>) – locus the operation acts on</p></li>
-<li><p><strong>impl_name</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em> | </em><em>None</em>) – implementation name. Uses the assigned default implementation if not specified.</p></li>
-<li><p><strong>strict_locus</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – iff False, for non-symmetric implementations of symmetric ops the locus order may
+<li><p><strong>op_name</strong> (<em>str</em>) – operation name</p></li>
+<li><p><strong>locus</strong> (<em>tuple</em><em>[</em><em>str</em><em>, </em><em>...</em><em>]</em>) – locus the operation acts on</p></li>
+<li><p><strong>impl_name</strong> (<em>str</em><em> | </em><em>None</em>) – implementation name. Uses the assigned default implementation if not specified.</p></li>
+<li><p><strong>strict_locus</strong> (<em>bool</em>) – iff False, for non-symmetric implementations of symmetric ops the locus order may
 be changed if no calibration data is available for the requested locus order</p></li>
 </ul>
 </dd>
@@ -565,7 +565,7 @@ be changed if no calibration data is available for the requested locus order</p>
 Subclasses can reimplement this method in case it makes sense in their context.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.11/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a></p>
+<dd class="field-odd"><p><em>float</em></p>
 </dd>
 </dl>
 </dd></dl>
@@ -588,7 +588,7 @@ calibration data under the key <code class="docutils literal notranslate"><span 
 <li><p><strong>params</strong> (<em>NestedParams</em>) – (subset of) <code class="docutils literal notranslate"><span class="pre">cls.parameters</span></code> specifying the <code class="docutils literal notranslate"><span class="pre">calibration_data</span></code> items
 to convert and return</p></li>
 <li><p><strong>channel_props</strong> (<a class="reference internal" href="iqm.pulse.playlist.channel.ChannelProperties.html#iqm.pulse.playlist.channel.ChannelProperties" title="iqm.pulse.playlist.channel.ChannelProperties"><em>ChannelProperties</em></a>) – used to convert <code class="docutils literal notranslate"><span class="pre">&quot;duration&quot;</span></code> from seconds into channel samples</p></li>
-<li><p><strong>duration</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em> | </em><em>None</em>) – Time duration of the gate, in seconds. If None, <code class="docutils literal notranslate"><span class="pre">calibration_data</span></code> must have
+<li><p><strong>duration</strong> (<em>float</em><em> | </em><em>None</em>) – Time duration of the gate, in seconds. If None, <code class="docutils literal notranslate"><span class="pre">calibration_data</span></code> must have
 an item named <code class="docutils literal notranslate"><span class="pre">&quot;duration&quot;</span></code>, measured in seconds, which will be used instead.</p></li>
 </ul>
 </dd>
@@ -609,10 +609,10 @@ an item named <code class="docutils literal notranslate"><span class="pre">&quot
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>locus</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/collections.abc.html#collections.abc.Iterable" title="(in Python v3.11)"><em>Iterable</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>]</em>) – Locus component names to replace the wildcard character <code class="docutils literal notranslate"><span class="pre">&quot;*&quot;</span></code> in the calibration
+<li><p><strong>locus</strong> (<em>Iterable</em><em>[</em><em>str</em><em>]</em>) – Locus component names to replace the wildcard character <code class="docutils literal notranslate"><span class="pre">&quot;*&quot;</span></code> in the calibration
 parameter names. One <code class="docutils literal notranslate"><span class="pre">Setting</span></code> will be generated for each component name in <code class="docutils literal notranslate"><span class="pre">locus</span></code>.
 If there are no wildcard characters in <code class="docutils literal notranslate"><span class="pre">cls.parameters</span></code>, this argument has no effect.</p></li>
-<li><p><strong>path</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/collections.abc.html#collections.abc.Iterable" title="(in Python v3.11)"><em>Iterable</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>]</em>) – parts of the dotted name for the root node, if any.</p></li>
+<li><p><strong>path</strong> (<em>Iterable</em><em>[</em><em>str</em><em>]</em>) – parts of the dotted name for the root node, if any.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -634,15 +634,15 @@ override this for different behaviour.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>operation_name</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – name of the quantum operation.</p></li>
-<li><p><strong>implementation_name</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – name of the implementation</p></li>
+<li><p><strong>operation_name</strong> (<em>str</em>) – name of the quantum operation.</p></li>
+<li><p><strong>implementation_name</strong> (<em>str</em>) – name of the implementation</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>name of the locus mapping</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a></p>
+<dd class="field-odd"><p><em>str</em></p>
 </dd>
 </dl>
 </dd></dl>
@@ -658,7 +658,7 @@ sense that it knows its own locus mapping.</p>
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>chip_topology</strong> (<em>ChipTopology</em>) – ChipTopology instance in which context to create the custom locus mapping.</p></li>
-<li><p><strong>component_to_channels</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><em>dict</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3.11/library/collections.abc.html#collections.abc.Iterable" title="(in Python v3.11)"><em>Iterable</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>]</em><em>]</em>) – dict mapping QPU component names to an <code class="docutils literal notranslate"><span class="pre">Iterable</span></code> of channel operation names
+<li><p><strong>component_to_channels</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>Iterable</em><em>[</em><em>str</em><em>]</em><em>]</em>) – dict mapping QPU component names to an <code class="docutils literal notranslate"><span class="pre">Iterable</span></code> of channel operation names
 available for this component (i.e. “readout”, “drive”, “flux”). This info is often needed
 in building a locus mapping.</p></li>
 </ul>
@@ -672,7 +672,7 @@ in building a locus mapping.</p></li>
 </p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><em>dict</em></a>[<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#tuple" title="(in Python v3.11)"><em>tuple</em></a>[<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>, …] | <a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#frozenset" title="(in Python v3.11)"><em>frozenset</em></a>[<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>], <a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#tuple" title="(in Python v3.11)"><em>tuple</em></a>[<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>, …]] | <em>None</em></p>
+<dd class="field-odd"><p><em>dict</em>[<em>tuple</em>[<em>str</em>, …] | <em>frozenset</em>[<em>str</em>], <em>tuple</em>[<em>str</em>, …]] | <em>None</em></p>
 </dd>
 </dl>
 </dd></dl>
@@ -772,7 +772,7 @@ in building a locus mapping.</p></li>
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on 2025-02-19.
+  Last updated on 2025-02-20.
   <br/>
 </p>
   </div>
