@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>ScheduleBuilder &#8212; iqm.pulse 7.23 documentation</title>
+    <title>ScheduleBuilder &#8212; iqm.pulse 7.24 documentation</title>
   
   
   
@@ -41,7 +41,7 @@
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../_static/documentation_options.js?v=65175d8a"></script>
+    <script src="../_static/documentation_options.js?v=9456aa4a"></script>
     <script src="../_static/doctools.js?v=888ff710"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
@@ -53,8 +53,8 @@
     <link rel="prev" title="CircuitOperation" href="iqm.pulse.builder.CircuitOperation.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="7.23" />
-    <meta name="docbuild:last-update" content="2025-02-20"/>
+  <meta name="docsearch:version" content="7.24" />
+    <meta name="docbuild:last-update" content="2025-02-21"/>
   </head>
   
   
@@ -133,8 +133,8 @@
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="iqm.pulse 7.23 documentation - Home"/>
-    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="iqm.pulse 7.23 documentation - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="iqm.pulse 7.24 documentation - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="iqm.pulse 7.24 documentation - Home"/>
   
   
 </a></div>
@@ -419,7 +419,7 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="iqm.pulse.builder.ScheduleBuilder">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">iqm.pulse.builder.</span></span><span class="sig-name descname"><span class="pre">ScheduleBuilder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">op_table</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calibration</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chip_topology</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">channels</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">component_channels</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iqm.pulse.builder.ScheduleBuilder" title="Link to this definition">#</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.11/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Builds instruction schedules out of quantum circuits or individual quantum operations.</p>
 <p>Encapsulates known quantum ops, the calibration information for them, QPU components and their
 topology, and controller properties.</p>
@@ -429,8 +429,8 @@ topology, and controller properties.</p>
 <li><p><strong>op_table</strong> (<em>QuantumOpTable</em>) – definitions of known quantum ops</p></li>
 <li><p><strong>calibration</strong> (<em>OpCalibrationDataTree</em>) – calibration data tree for the quantum ops</p></li>
 <li><p><strong>chip_topology</strong> (<em>ChipTopology</em>) – Chip topology derived from the CHAD.</p></li>
-<li><p><strong>channels</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><a class="reference internal" href="iqm.pulse.playlist.channel.ChannelProperties.html#iqm.pulse.playlist.channel.ChannelProperties" title="iqm.pulse.playlist.channel.ChannelProperties"><em>ChannelProperties</em></a><em>]</em>) – mapping of controller names to the configurations of their channels</p></li>
-<li><p><strong>component_channels</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>dict</em><em>[</em><em>str</em><em>, </em><em>str</em><em>]</em><em>]</em>) – Mapping from QPU component name to a mapping of <code class="docutils literal notranslate"><span class="pre">('drive',</span> <span class="pre">'flux',</span> <span class="pre">'readout')</span></code>
+<li><p><strong>channels</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><em>dict</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><a class="reference internal" href="iqm.pulse.playlist.channel.ChannelProperties.html#iqm.pulse.playlist.channel.ChannelProperties" title="iqm.pulse.playlist.channel.ChannelProperties"><em>ChannelProperties</em></a><em>]</em>) – mapping of controller names to the configurations of their channels</p></li>
+<li><p><strong>component_channels</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><em>dict</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><em>dict</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>]</em><em>]</em>) – Mapping from QPU component name to a mapping of <code class="docutils literal notranslate"><span class="pre">('drive',</span> <span class="pre">'flux',</span> <span class="pre">'readout')</span></code>
 to the name of the control channel responsible for that function of the component.</p></li>
 </ul>
 </dd>
@@ -513,7 +513,7 @@ to the name of the control channel responsible for that function of the componen
 </div>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="iqm.pulse.builder.ScheduleBuilder._cache">
-<span class="sig-name descname"><span class="pre">_cache</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="iqm.pulse.gate_implementation.GateImplementation.html#iqm.pulse.gate_implementation.GateImplementation" title="iqm.pulse.gate_implementation.GateImplementation"><span class="pre">GateImplementation</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#iqm.pulse.builder.ScheduleBuilder._cache" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">_cache</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#tuple" title="(in Python v3.11)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="iqm.pulse.gate_implementation.GateImplementation.html#iqm.pulse.gate_implementation.GateImplementation" title="iqm.pulse.gate_implementation.GateImplementation"><span class="pre">GateImplementation</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#iqm.pulse.builder.ScheduleBuilder._cache" title="Link to this definition">#</a></dt>
 <dd><p>Cached GateImplementations. The tree has the same structure as OpCalibrationDataTree.</p>
 </dd></dl>
 
@@ -525,7 +525,7 @@ to the name of the control channel responsible for that function of the componen
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="iqm.pulse.builder.ScheduleBuilder._channel_to_component">
-<span class="sig-name descname"><span class="pre">_channel_to_component</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#iqm.pulse.builder.ScheduleBuilder._channel_to_component" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">_channel_to_component</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#iqm.pulse.builder.ScheduleBuilder._channel_to_component" title="Link to this definition">#</a></dt>
 <dd><p><code class="docutils literal notranslate"><span class="pre">self.component_channels</span></code> mapping inverted cached for scheduling algorithm performance. This mapping is
 used in the scheduling to determine the components to block based on their associated channels. Only
 blocking channels are included in this mapping, non-blocking channels (e.g. certain virtual channels) do not
@@ -540,7 +540,7 @@ block their components, just themselves.</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="iqm.pulse.builder.ScheduleBuilder._require_scheduling_in_seconds">
-<span class="sig-name descname"><span class="pre">_require_scheduling_in_seconds</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#iqm.pulse.builder.ScheduleBuilder._require_scheduling_in_seconds" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">_require_scheduling_in_seconds</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></em><a class="headerlink" href="#iqm.pulse.builder.ScheduleBuilder._require_scheduling_in_seconds" title="Link to this definition">#</a></dt>
 <dd><p>Whether to require scheduling of probe instructions in seconds instead of in samples. This can happen for two
 reasons: 1) the probe channel has a different sampling rate to the other channels (e.g. with UHFQA) or
 2) the probe channels have a different instruction granularity to some of the other channels (e.g. with
@@ -549,7 +549,7 @@ mixed stations that have the RO device from a different vendor than some of the 
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="iqm.pulse.builder.ScheduleBuilder._channel_templates">
-<span class="sig-name descname"><span class="pre">_channel_templates</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="iqm.pulse.playlist.channel.ChannelProperties.html#iqm.pulse.playlist.channel.ChannelProperties" title="iqm.pulse.playlist.channel.ChannelProperties"><span class="pre">ChannelProperties</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#iqm.pulse.builder.ScheduleBuilder._channel_templates" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">_channel_templates</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference internal" href="iqm.pulse.playlist.channel.ChannelProperties.html#iqm.pulse.playlist.channel.ChannelProperties" title="iqm.pulse.playlist.channel.ChannelProperties"><span class="pre">ChannelProperties</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#iqm.pulse.builder.ScheduleBuilder._channel_templates" title="Link to this definition">#</a></dt>
 <dd><p>Cache representative channel properties for a probe and a non-probe channel for the scheduling algorithm
 performance.</p>
 </dd></dl>
@@ -562,7 +562,7 @@ performance.</p>
 the cache for any factorizable gate implementation, if any of its locus components was affected.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>partial_calibration</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>dict</em><em>[</em><em>str</em><em>, </em><em>dict</em><em>[</em><em>tuple</em><em>[</em><em>str</em><em>, </em><em>...</em><em>] </em><em>| </em><em>None</em><em>, </em><em>dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em><em>]</em><em>]</em><em>]</em>) – data to be injected. Must have the same structure as <code class="docutils literal notranslate"><span class="pre">self.calibration</span></code> but does not
+<dd class="field-odd"><p><strong>partial_calibration</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><em>dict</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><em>dict</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><em>dict</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#tuple" title="(in Python v3.11)"><em>tuple</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>...</em><em>] </em><em>| </em><em>None</em><em>, </em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><em>dict</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3.11/library/typing.html#typing.Any" title="(in Python v3.11)"><em>Any</em></a><em>]</em><em>]</em><em>]</em><em>]</em>) – data to be injected. Must have the same structure as <code class="docutils literal notranslate"><span class="pre">self.calibration</span></code> but does not
 have to contain all operations/implementations/loci/values. Only the parts of the data that are
 found will be merged into <code class="docutils literal notranslate"><span class="pre">self.calibration</span></code> (including any <code class="docutils literal notranslate"><span class="pre">None</span></code> values). <code class="docutils literal notranslate"><span class="pre">self._cache</span></code> will
 be invalidated for the found operations/implementations/loci and only if the new calibration data
@@ -580,7 +580,7 @@ actually differs from the previous.</p>
 <dd><p>Check that the calibration data matches the known quantum operations.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>ValueError</strong> – there is something wrong with the calibration data</p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.11/library/exceptions.html#ValueError" title="(in Python v3.11)"><strong>ValueError</strong></a> – there is something wrong with the calibration data</p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><em>None</em></p>
@@ -594,16 +594,16 @@ actually differs from the previous.</p>
 <dd><p>Drive channel for the given QPU component.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>component</strong> (<em>str</em>) – name of a QPU component</p>
+<dd class="field-odd"><p><strong>component</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – name of a QPU component</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Name of the drive channel for <code class="docutils literal notranslate"><span class="pre">component</span></code>, if it exists.</p>
 </dd>
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>KeyError</strong> – if component does not exist or does not have a drive channel</p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.11/library/exceptions.html#KeyError" title="(in Python v3.11)"><strong>KeyError</strong></a> – if component does not exist or does not have a drive channel</p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><em>str</em></p>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -615,10 +615,10 @@ actually differs from the previous.</p>
 <p>See <a class="reference internal" href="#iqm.pulse.builder.ScheduleBuilder.get_drive_channel" title="iqm.pulse.builder.ScheduleBuilder.get_drive_channel"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_drive_channel()</span></code></a>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>component</strong> (<em>str</em>) – </p>
+<dd class="field-odd"><p><strong>component</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – </p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><em>str</em></p>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -630,10 +630,10 @@ actually differs from the previous.</p>
 <p>See <a class="reference internal" href="#iqm.pulse.builder.ScheduleBuilder.get_drive_channel" title="iqm.pulse.builder.ScheduleBuilder.get_drive_channel"><code class="xref py py-meth docutils literal notranslate"><span class="pre">get_drive_channel()</span></code></a>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>component</strong> (<em>str</em>) – </p>
+<dd class="field-odd"><p><strong>component</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – </p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><em>str</em></p>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -646,13 +646,13 @@ actually differs from the previous.</p>
 <cite>component</cite> can be either the source or the destination of the signal.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>component</strong> (<em>str</em>) – name of a QPU component</p>
+<dd class="field-odd"><p><strong>component</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – name of a QPU component</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Names of the virtual channels.</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><em>list</em>[<em>str</em>]</p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#list" title="(in Python v3.11)"><em>list</em></a>[<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -664,18 +664,18 @@ actually differs from the previous.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>awg_name</strong> (<em>str</em>) – name of the awg node that receives the feedback bit.</p></li>
-<li><p><strong>feedback_qubit</strong> (<em>str</em>) – which qubit’s measurement resulted in the feedback bit</p></li>
+<li><p><strong>awg_name</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – name of the awg node that receives the feedback bit.</p></li>
+<li><p><strong>feedback_qubit</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – which qubit’s measurement resulted in the feedback bit</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>The virtual feedback channel name.</p>
 </dd>
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>ValueError</strong> – if the given AWG does not support fast feedback from the given probe line.</p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.11/library/exceptions.html#ValueError" title="(in Python v3.11)"><strong>ValueError</strong></a> – if the given AWG does not support fast feedback from the given probe line.</p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><em>str</em></p>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -689,16 +689,16 @@ actually differs from the previous.</p>
 <dd class="field-odd"><p>name of the channel</p>
 </dd>
 <dt class="field-even">Raises<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>KeyError</strong> – if component does not exist or does not have the operation</p>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.11/library/exceptions.html#KeyError" title="(in Python v3.11)"><strong>KeyError</strong></a> – if component does not exist or does not have the operation</p>
 </dd>
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>component</strong> (<em>str</em>) – </p></li>
-<li><p><strong>operation</strong> (<em>str</em>) – </p></li>
+<li><p><strong>component</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – </p></li>
+<li><p><strong>operation</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – </p></li>
 </ul>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><em>str</em></p>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -710,16 +710,16 @@ actually differs from the previous.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>op_name</strong> (<em>str</em>) – name of the quantum operation</p></li>
-<li><p><strong>impl_name</strong> (<em>str</em>) – name of the implementation</p></li>
-<li><p><strong>locus</strong> (<em>tuple</em><em>[</em><em>str</em><em>, </em><em>...</em><em>]</em>) – locus of the operation</p></li>
+<li><p><strong>op_name</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – name of the quantum operation</p></li>
+<li><p><strong>impl_name</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – name of the implementation</p></li>
+<li><p><strong>locus</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#tuple" title="(in Python v3.11)"><em>tuple</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>...</em><em>]</em>) – locus of the operation</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>True iff requested calibration data was found</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><em>bool</em></p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.11/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -731,19 +731,19 @@ actually differs from the previous.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>op_name</strong> (<em>str</em>) – name of the quantum operation</p></li>
-<li><p><strong>impl_name</strong> (<em>str</em>) – name of the implementation</p></li>
-<li><p><strong>locus</strong> (<em>tuple</em><em>[</em><em>str</em><em>, </em><em>...</em><em>]</em>) – locus of the operation</p></li>
+<li><p><strong>op_name</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – name of the quantum operation</p></li>
+<li><p><strong>impl_name</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – name of the implementation</p></li>
+<li><p><strong>locus</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#tuple" title="(in Python v3.11)"><em>tuple</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>...</em><em>]</em>) – locus of the operation</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>requested calibration data</p>
 </dd>
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>ValueError</strong> – requested calibration data was not found</p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.11/library/exceptions.html#ValueError" title="(in Python v3.11)"><strong>ValueError</strong></a> – requested calibration data was not found</p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><em>dict</em>[<em>str</em>, <em>Any</em>]</p>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><em>dict</em></a>[<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>, <a class="reference external" href="https://docs.python.org/3.11/library/typing.html#typing.Any" title="(in Python v3.11)"><em>Any</em></a>]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -758,13 +758,13 @@ separately in the TimeBox resolution phase.</p>
 <p>Will only return channels that are known to exist, i.e. are found in <code class="xref py py-attr docutils literal notranslate"><span class="pre">ScheduleBuilder.channels</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>locus</strong> (<em>Iterable</em><em>[</em><em>str</em><em>]</em>) – locus on which the operation acts</p>
+<dd class="field-odd"><p><strong>locus</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/collections.abc.html#collections.abc.Iterable" title="(in Python v3.11)"><em>Iterable</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>]</em>) – locus on which the operation acts</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>names of the control channels that directly affect the operation</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><em>tuple</em>[<em>str</em>, …]</p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#tuple" title="(in Python v3.11)"><em>tuple</em></a>[<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>, …]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -790,9 +790,9 @@ In the future, EXA sweep generation should be responsible for doing the rounding
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>locus</strong> (<em>Iterable</em><em>[</em><em>str</em><em>]</em>) – locus components that should experience the wait</p></li>
-<li><p><strong>duration</strong> (<em>float</em>) – how long to wait (in seconds)</p></li>
-<li><p><strong>rounding</strong> (<em>bool</em>) – Iff True, for each channel separately, <code class="docutils literal notranslate"><span class="pre">duration</span></code> will be rounded to the
+<li><p><strong>locus</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/collections.abc.html#collections.abc.Iterable" title="(in Python v3.11)"><em>Iterable</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>]</em>) – locus components that should experience the wait</p></li>
+<li><p><strong>duration</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – how long to wait (in seconds)</p></li>
+<li><p><strong>rounding</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – Iff True, for each channel separately, <code class="docutils literal notranslate"><span class="pre">duration</span></code> will be rounded to the
 nearest value allowed by the granularity of that channel. The Waits will start
 simultaneously.</p></li>
 </ul>
@@ -813,18 +813,18 @@ simultaneously.</p></li>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>op_name</strong> (<em>str</em>) – name of the quantum operation</p></li>
-<li><p><strong>locus</strong> (<em>Iterable</em><em>[</em><em>str</em><em>]</em>) – locus of the operation</p></li>
-<li><p><strong>impl_name</strong> (<em>str</em><em> | </em><em>None</em>) – name of the implementation (<code class="docutils literal notranslate"><span class="pre">None</span></code> means the implementation is chosen automatically
+<li><p><strong>op_name</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – name of the quantum operation</p></li>
+<li><p><strong>locus</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/collections.abc.html#collections.abc.Iterable" title="(in Python v3.11)"><em>Iterable</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>]</em>) – locus of the operation</p></li>
+<li><p><strong>impl_name</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em> | </em><em>None</em>) – name of the implementation (<code class="docutils literal notranslate"><span class="pre">None</span></code> means the implementation is chosen automatically
 using the logic described below)</p></li>
-<li><p><strong>strict_locus</strong> (<em>bool</em>) – iff False, for non-symmetric implementations of symmetric ops the locus order may
+<li><p><strong>strict_locus</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – iff False, for non-symmetric implementations of symmetric ops the locus order may
 be changed if no calibration data is available for the requested locus order</p></li>
-<li><p><strong>use_priority_order</strong> (<em>bool</em>) – Only has an effect if <code class="docutils literal notranslate"><span class="pre">impl_name</span></code> is <code class="docutils literal notranslate"><span class="pre">None</span></code>. Iff <code class="docutils literal notranslate"><span class="pre">False</span></code>,
+<li><p><strong>use_priority_order</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – Only has an effect if <code class="docutils literal notranslate"><span class="pre">impl_name</span></code> is <code class="docutils literal notranslate"><span class="pre">None</span></code>. Iff <code class="docutils literal notranslate"><span class="pre">False</span></code>,
 <code class="xref py py-meth docutils literal notranslate"><span class="pre">QuantumOp.get_default_implementation_for_locus()</span></code> is used. Otherwise, the first implementation in
 the priority order that has calibration data for <code class="docutils literal notranslate"><span class="pre">locus</span></code> is chosen. The priority order is as follows:
 1. The locus-specific priority defined in <code class="docutils literal notranslate"><span class="pre">QuantumOp.defaults_for_locus[locus]</span></code> if any.
 2. The global priority order defined in <code class="xref py py-attr docutils literal notranslate"><span class="pre">QuantumOp.implementations</span></code>.</p></li>
-<li><p><strong>priority_calibration</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>] </em><em>| </em><em>None</em>) – Calibration data from which to load the calibration instead of the common calibration
+<li><p><strong>priority_calibration</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><em>dict</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3.11/library/typing.html#typing.Any" title="(in Python v3.11)"><em>Any</em></a><em>] </em><em>| </em><em>None</em>) – Calibration data from which to load the calibration instead of the common calibration
 data in <code class="xref py py-attr docutils literal notranslate"><span class="pre">calibration</span></code>. If no calibration is found for the given implementation or
 <code class="docutils literal notranslate"><span class="pre">priority_calibration</span></code> is <code class="docutils literal notranslate"><span class="pre">None</span></code>, the common calibration is used. Any non-empty
 values found in <code class="docutils literal notranslate"><span class="pre">priority_calibration</span></code> will be merged to the common calibration. Note:
@@ -835,7 +835,7 @@ using <code class="docutils literal notranslate"><span class="pre">priority_cali
 <dd class="field-even"><p>requested implementation</p>
 </dd>
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>ValueError</strong> – requested implementation could not be provided</p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.11/library/exceptions.html#ValueError" title="(in Python v3.11)"><strong>ValueError</strong></a> – requested implementation could not be provided</p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="iqm.pulse.gate_implementation.GateImplementation.html#iqm.pulse.gate_implementation.GateImplementation" title="iqm.pulse.gate_implementation.GateImplementation"><em>GateImplementation</em></a></p>
@@ -852,10 +852,10 @@ with the calibration data.</p>
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>op</strong> (<a class="reference internal" href="iqm.pulse.quantum_ops.QuantumOp.html#iqm.pulse.quantum_ops.QuantumOp" title="iqm.pulse.quantum_ops.QuantumOp"><em>QuantumOp</em></a>) – quantum operation</p></li>
-<li><p><strong>impl_name</strong> (<em>str</em><em> | </em><em>None</em>) – Name of the implementation. <code class="docutils literal notranslate"><span class="pre">None</span></code> means use the highest-priority implementation for
+<li><p><strong>impl_name</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em> | </em><em>None</em>) – Name of the implementation. <code class="docutils literal notranslate"><span class="pre">None</span></code> means use the highest-priority implementation for
 which we have calibration data.</p></li>
-<li><p><strong>locus</strong> (<em>tuple</em><em>[</em><em>str</em><em>, </em><em>...</em><em>]</em>) – locus of the operation</p></li>
-<li><p><strong>strict_locus</strong> (<em>bool</em>) – iff False, for non-symmetric implementations of symmetric ops the locus order may
+<li><p><strong>locus</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#tuple" title="(in Python v3.11)"><em>tuple</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>...</em><em>]</em>) – locus of the operation</p></li>
+<li><p><strong>strict_locus</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – iff False, for non-symmetric implementations of symmetric ops the locus order may
 be changed to an equivalent one if no calibration data is available for the requested locus order</p></li>
 </ul>
 </dd>
@@ -864,14 +864,14 @@ be changed to an equivalent one if no calibration data is available for the requ
 </dd>
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>ValueError</strong> – requested implementation could not be found</p></li>
-<li><p><strong>ValueError</strong> – requested implementation had no calibration data for this locus</p></li>
-<li><p><strong>ValueError</strong> – no specific implementation was requested, but no known implementation had
+<li><p><a class="reference external" href="https://docs.python.org/3.11/library/exceptions.html#ValueError" title="(in Python v3.11)"><strong>ValueError</strong></a> – requested implementation could not be found</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3.11/library/exceptions.html#ValueError" title="(in Python v3.11)"><strong>ValueError</strong></a> – requested implementation had no calibration data for this locus</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3.11/library/exceptions.html#ValueError" title="(in Python v3.11)"><strong>ValueError</strong></a> – no specific implementation was requested, but no known implementation had
     calibration data for this locus</p></li>
 </ul>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><em>tuple</em>[<em>str</em>, <em>tuple</em>[<em>str</em>, …]]</p>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#tuple" title="(in Python v3.11)"><em>tuple</em></a>[<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>, <a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#tuple" title="(in Python v3.11)"><em>tuple</em></a>[<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>, …]]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -885,12 +885,12 @@ be changed to an equivalent one if no calibration data is available for the requ
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>op</strong> (<a class="reference internal" href="iqm.pulse.quantum_ops.QuantumOp.html#iqm.pulse.quantum_ops.QuantumOp" title="iqm.pulse.quantum_ops.QuantumOp"><em>QuantumOp</em></a>) – quantum operation</p></li>
-<li><p><strong>impl_name</strong> (<em>str</em><em> | </em><em>None</em>) – Name of the implementation. <code class="docutils literal notranslate"><span class="pre">None</span></code> means use the highest-priority implementation for
+<li><p><strong>impl_name</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em> | </em><em>None</em>) – Name of the implementation. <code class="docutils literal notranslate"><span class="pre">None</span></code> means use the highest-priority implementation for
 which we have calibration data.</p></li>
-<li><p><strong>locus</strong> (<em>tuple</em><em>[</em><em>str</em><em>, </em><em>...</em><em>]</em>) – locus of the operation</p></li>
-<li><p><strong>strict_locus</strong> (<em>bool</em>) – iff False, for non-symmetric implementations of symmetric ops the locus order may
+<li><p><strong>locus</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#tuple" title="(in Python v3.11)"><em>tuple</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>...</em><em>]</em>) – locus of the operation</p></li>
+<li><p><strong>strict_locus</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – iff False, for non-symmetric implementations of symmetric ops the locus order may
 be changed if no calibration data is available for the requested locus order</p></li>
-<li><p><strong>priority_calibration</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>] </em><em>| </em><em>None</em>) – Calibration data from which to load the calibration instead of the common
+<li><p><strong>priority_calibration</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><em>dict</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3.11/library/typing.html#typing.Any" title="(in Python v3.11)"><em>Any</em></a><em>] </em><em>| </em><em>None</em>) – Calibration data from which to load the calibration instead of the common
 calibration data. Priority calibration should be either a dict of the type <cite>OILCalibrationData</cite>,
 i.e. containing the operation name, implementation name, and locus, or just a dict containing
 the calibration data for the locus implied by the args <cite>op</cite>, <cite>impl_name</cite> and <cite>locus</cite>.</p></li>
@@ -900,7 +900,7 @@ the calibration data for the locus implied by the args <cite>op</cite>, <cite>im
 <dd class="field-even"><p>requested implementation</p>
 </dd>
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>ValueError</strong> – requested implementation could not be provided or had no calibration data for this locus</p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.11/library/exceptions.html#ValueError" title="(in Python v3.11)"><strong>ValueError</strong></a> – requested implementation could not be provided or had no calibration data for this locus</p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference internal" href="iqm.pulse.gate_implementation.GateImplementation.html#iqm.pulse.gate_implementation.GateImplementation" title="iqm.pulse.gate_implementation.GateImplementation"><em>GateImplementation</em></a></p>
@@ -915,15 +915,15 @@ the calibration data for the locus implied by the args <cite>op</cite>, <cite>im
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>op_name</strong> (<em>str</em>) – name of the quantum operation</p></li>
-<li><p><strong>impl_name</strong> (<em>str</em><em> | </em><em>None</em>) – name of the implementation (<code class="docutils literal notranslate"><span class="pre">None</span></code> means use the default implementation)</p></li>
+<li><p><strong>op_name</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – name of the quantum operation</p></li>
+<li><p><strong>impl_name</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em> | </em><em>None</em>) – name of the implementation (<code class="docutils literal notranslate"><span class="pre">None</span></code> means use the default implementation)</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>requested implementation class</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><em>type</em>[<a class="reference internal" href="iqm.pulse.gate_implementation.GateImplementation.html#iqm.pulse.gate_implementation.GateImplementation" title="iqm.pulse.gate_implementation.GateImplementation"><em>GateImplementation</em></a>]</p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.11/library/functions.html#type" title="(in Python v3.11)"><em>type</em></a>[<a class="reference internal" href="iqm.pulse.gate_implementation.GateImplementation.html#iqm.pulse.gate_implementation.GateImplementation" title="iqm.pulse.gate_implementation.GateImplementation"><em>GateImplementation</em></a>]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -935,12 +935,12 @@ the calibration data for the locus implied by the args <cite>op</cite>, <cite>im
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>operations</strong> (<em>Iterable</em><em>[</em><a class="reference internal" href="iqm.pulse.builder.CircuitOperation.html#iqm.pulse.builder.CircuitOperation" title="iqm.pulse.builder.CircuitOperation"><em>CircuitOperation</em></a><em>]</em>) – quantum circuit to be validated</p></li>
-<li><p><strong>require_measurements</strong> (<em>bool</em>) – iff True the circuit must include at least one measurement operation</p></li>
+<li><p><strong>operations</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/collections.abc.html#collections.abc.Iterable" title="(in Python v3.11)"><em>Iterable</em></a><em>[</em><a class="reference internal" href="iqm.pulse.builder.CircuitOperation.html#iqm.pulse.builder.CircuitOperation" title="iqm.pulse.builder.CircuitOperation"><em>CircuitOperation</em></a><em>]</em>) – quantum circuit to be validated</p></li>
+<li><p><strong>require_measurements</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – iff True the circuit must include at least one measurement operation</p></li>
 </ul>
 </dd>
 <dt class="field-even">Raises<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>ValueError</strong> – <code class="docutils literal notranslate"><span class="pre">operations</span></code> do not constitute a valid quantum circuit</p>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.11/library/exceptions.html#ValueError" title="(in Python v3.11)"><strong>ValueError</strong></a> – <code class="docutils literal notranslate"><span class="pre">operations</span></code> do not constitute a valid quantum circuit</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><em>None</em></p>
@@ -955,10 +955,10 @@ the calibration data for the locus implied by the args <cite>op</cite>, <cite>im
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>circuit</strong> (<em>Iterable</em><em>[</em><a class="reference internal" href="iqm.pulse.builder.CircuitOperation.html#iqm.pulse.builder.CircuitOperation" title="iqm.pulse.builder.CircuitOperation"><em>CircuitOperation</em></a><em>]</em>) – quantum circuit</p></li>
-<li><p><strong>name</strong> (<em>str</em>) – name of the circuit</p></li>
+<li><p><strong>circuit</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/collections.abc.html#collections.abc.Iterable" title="(in Python v3.11)"><em>Iterable</em></a><em>[</em><a class="reference internal" href="iqm.pulse.builder.CircuitOperation.html#iqm.pulse.builder.CircuitOperation" title="iqm.pulse.builder.CircuitOperation"><em>CircuitOperation</em></a><em>]</em>) – quantum circuit</p></li>
+<li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – name of the circuit</p></li>
 <li><p><strong>scheduling_algorithm</strong> (<a class="reference internal" href="iqm.pulse.timebox.SchedulingAlgorithm.html#iqm.pulse.timebox.SchedulingAlgorithm" title="iqm.pulse.timebox.SchedulingAlgorithm"><em>SchedulingAlgorithm</em></a>) – scheduling algorithm to be used in resolving the TimeBoxes.</p></li>
-<li><p><strong>locus_mapping</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>str</em><em>] </em><em>| </em><em>None</em>) – optional mapping of placeholder component names to the physical component names used
+<li><p><strong>locus_mapping</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><em>dict</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>] </em><em>| </em><em>None</em>) – optional mapping of placeholder component names to the physical component names used
 while resolving the circuit into a TimeBox.</p></li>
 </ul>
 </dd>
@@ -986,8 +986,8 @@ and <a class="reference internal" href="#iqm.pulse.builder.ScheduleBuilder.timeb
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>boxes</strong> (<em>Iterable</em><em>[</em><a class="reference internal" href="iqm.pulse.timebox.TimeBox.html#iqm.pulse.timebox.TimeBox" title="iqm.pulse.timebox.TimeBox"><em>TimeBox</em></a><em>]</em>) – TimeBoxes to include in the playlist</p></li>
-<li><p><strong>neighborhood</strong> (<em>int</em>) – During scheduling, block neighboring channels of the used components this far. By default,
+<li><p><strong>boxes</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/collections.abc.html#collections.abc.Iterable" title="(in Python v3.11)"><em>Iterable</em></a><em>[</em><a class="reference internal" href="iqm.pulse.timebox.TimeBox.html#iqm.pulse.timebox.TimeBox" title="iqm.pulse.timebox.TimeBox"><em>TimeBox</em></a><em>]</em>) – TimeBoxes to include in the playlist</p></li>
+<li><p><strong>neighborhood</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – During scheduling, block neighboring channels of the used components this far. By default,
 blocks only the defined locus components and any other components which have occupied channels.</p></li>
 </ul>
 </dd>
@@ -995,7 +995,7 @@ blocks only the defined locus components and any other components which have occ
 <dd class="field-even"><p>playlist that implements <code class="docutils literal notranslate"><span class="pre">boxes</span></code>, padded schedule duration in seconds</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><em>tuple</em>[<em>Playlist</em>, <em>float</em>]</p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#tuple" title="(in Python v3.11)"><em>tuple</em></a>[<em>Playlist</em>, <a class="reference external" href="https://docs.python.org/3.11/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1009,8 +1009,8 @@ the Schedules into a Playlist. Assumes all the TimeBoxes refer to the same QPU a
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>boxes</strong> (<em>Iterable</em><em>[</em><a class="reference internal" href="iqm.pulse.timebox.TimeBox.html#iqm.pulse.timebox.TimeBox" title="iqm.pulse.timebox.TimeBox"><em>TimeBox</em></a><em>]</em>) – TimeBoxes to include in the playlist</p></li>
-<li><p><strong>neighborhood</strong> (<em>int</em>) – During scheduling, block neighboring channels of the used components this far.
+<li><p><strong>boxes</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/collections.abc.html#collections.abc.Iterable" title="(in Python v3.11)"><em>Iterable</em></a><em>[</em><a class="reference internal" href="iqm.pulse.timebox.TimeBox.html#iqm.pulse.timebox.TimeBox" title="iqm.pulse.timebox.TimeBox"><em>TimeBox</em></a><em>]</em>) – TimeBoxes to include in the playlist</p></li>
+<li><p><strong>neighborhood</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – During scheduling, block neighboring channels of the used components this far.
 The default value ensures that quantum operations work as intended, assuming the station
 is properly calibrated. Higher values may help defend against crosstalk, at the expense
 of a longer instruction schedule and thus more decoherence.</p></li>
@@ -1035,7 +1035,7 @@ at the channel sample_rate.</p>
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>box</strong> (<a class="reference internal" href="iqm.pulse.timebox.TimeBox.html#iqm.pulse.timebox.TimeBox" title="iqm.pulse.timebox.TimeBox"><em>TimeBox</em></a>) – TimeBox to resolve</p></li>
-<li><p><strong>neighborhood</strong> (<em>int</em>) – During scheduling, block neighboring channels of the used components this far.
+<li><p><strong>neighborhood</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – During scheduling, block neighboring channels of the used components this far.
 The default value ensures that quantum operations work as intended, assuming the station
 is properly calibrated. Higher values may help defend against crosstalk, at the expense
 of a longer instruction schedule and thus more decoherence.</p></li>
@@ -1090,10 +1090,10 @@ longest channel within defines the duration) and <code class="docutils literal n
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>box</strong> (<a class="reference internal" href="iqm.pulse.timebox.TimeBox.html#iqm.pulse.timebox.TimeBox" title="iqm.pulse.timebox.TimeBox"><em>TimeBox</em></a>) – TimeBox to resolve</p></li>
-<li><p><strong>neighborhood</strong> (<em>int</em>) – During scheduling, block control channels of neighboring QPU components this far
+<li><p><strong>neighborhood</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – During scheduling, block control channels of neighboring QPU components this far
 from the locus. Values higher than 0 may help defend against crosstalk, at the expense
 of a longer instruction schedule and thus more decoherence.</p></li>
-<li><p><strong>compute_neighborhood_hard_boundary</strong> (<em>bool</em>) – Whether to precompute the neighborhood components while resolving
+<li><p><strong>compute_neighborhood_hard_boundary</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – Whether to precompute the neighborhood components while resolving
 a composite <code class="docutils literal notranslate"><span class="pre">TimeBox</span></code> in the <code class="docutils literal notranslate"><span class="pre">HARD_BOUNDARY</span></code> algorithm. Typically one does not want to do this on
 the top layer composite <code class="docutils literal notranslate"><span class="pre">TimeBox</span></code>, since it would be unused. The algorithm sets this <code class="docutils literal notranslate"><span class="pre">True</span></code> on
 lower layers, where it improves the performance as the neighborhood components are needed in scheduling.</p></li>
@@ -1117,8 +1117,8 @@ rectangle (the longest channel within defines the duration).</p>
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>box</strong> (<a class="reference internal" href="iqm.pulse.timebox.TimeBox.html#iqm.pulse.timebox.TimeBox" title="iqm.pulse.timebox.TimeBox"><em>TimeBox</em></a>) – </p></li>
-<li><p><strong>neighborhood</strong> (<em>int</em>) – </p></li>
-<li><p><strong>compute_neighborhood</strong> (<em>bool</em>) – </p></li>
+<li><p><strong>neighborhood</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – </p></li>
+<li><p><strong>compute_neighborhood</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – </p></li>
 </ul>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
@@ -1135,14 +1135,14 @@ rectangle (the longest channel within defines the duration).</p>
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>box</strong> (<a class="reference internal" href="iqm.pulse.timebox.TimeBox.html#iqm.pulse.timebox.TimeBox" title="iqm.pulse.timebox.TimeBox"><em>TimeBox</em></a>) – Atomic TimeBox whose neighborhood to compute.</p></li>
-<li><p><strong>neighborhood</strong> (<em>int</em>) – Return QPU components this far from the locus.</p></li>
+<li><p><strong>neighborhood</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – Return QPU components this far from the locus.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>QPU components (plus maybe channels?) belonging the the given neighborhood of <code class="docutils literal notranslate"><span class="pre">box</span></code>.</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><em>set</em>[<em>str</em>]</p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#set" title="(in Python v3.11)"><em>set</em></a>[<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -1156,7 +1156,7 @@ rectangle (the longest channel within defines the duration).</p>
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>box</strong> (<a class="reference internal" href="iqm.pulse.timebox.TimeBox.html#iqm.pulse.timebox.TimeBox" title="iqm.pulse.timebox.TimeBox"><em>TimeBox</em></a>) – </p></li>
-<li><p><strong>neighborhood</strong> (<em>int</em>) – </p></li>
+<li><p><strong>neighborhood</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – </p></li>
 </ul>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
@@ -1189,8 +1189,8 @@ quantum operation.</p>
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>schedule</strong> (<a class="reference internal" href="iqm.pulse.playlist.schedule.Schedule.html#iqm.pulse.playlist.schedule.Schedule" title="iqm.pulse.playlist.schedule.Schedule"><em>Schedule</em></a>) – instruction schedule to modify</p></li>
-<li><p><strong>locus</strong> (<em>set</em><em>[</em><em>str</em><em>]</em>) – information-carrying QPU components <code class="docutils literal notranslate"><span class="pre">schedule</span></code> is meant to operate on (does not include couplers)</p></li>
-<li><p><strong>neighborhood</strong> (<em>int</em>) – How far should we block neighboring QPU components?
+<li><p><strong>locus</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#set" title="(in Python v3.11)"><em>set</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>]</em>) – information-carrying QPU components <code class="docutils literal notranslate"><span class="pre">schedule</span></code> is meant to operate on (does not include couplers)</p></li>
+<li><p><strong>neighborhood</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – How far should we block neighboring QPU components?
 Zero means just the locus qubits, one means neighboring couplers, two means <em>their</em> neighboring
 qubits etc.</p></li>
 </ul>
@@ -1215,8 +1215,8 @@ needs to be transferred to Station Control.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>schedules</strong> (<em>Iterable</em><em>[</em><a class="reference internal" href="iqm.pulse.playlist.schedule.Schedule.html#iqm.pulse.playlist.schedule.Schedule" title="iqm.pulse.playlist.schedule.Schedule"><em>Schedule</em></a><em>]</em>) – finished instruction schedules to include in the playlist</p></li>
-<li><p><strong>finish_schedules</strong> (<em>bool</em>) – whether to finalise the schedules before building the playlist. Should be set <code class="docutils literal notranslate"><span class="pre">True</span></code>
+<li><p><strong>schedules</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/collections.abc.html#collections.abc.Iterable" title="(in Python v3.11)"><em>Iterable</em></a><em>[</em><a class="reference internal" href="iqm.pulse.playlist.schedule.Schedule.html#iqm.pulse.playlist.schedule.Schedule" title="iqm.pulse.playlist.schedule.Schedule"><em>Schedule</em></a><em>]</em>) – finished instruction schedules to include in the playlist</p></li>
+<li><p><strong>finish_schedules</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – whether to finalise the schedules before building the playlist. Should be set <code class="docutils literal notranslate"><span class="pre">True</span></code>
 unless some process has already finalised them before calling this function.</p></li>
 </ul>
 </dd>
@@ -1224,7 +1224,7 @@ unless some process has already finalised them before calling this function.</p>
 <dd class="field-even"><p>playlist containing the schedules</p>
 </dd>
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>ValueError</strong> – if the schedules contain channels with non-uniform sampling rates</p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.11/library/exceptions.html#ValueError" title="(in Python v3.11)"><strong>ValueError</strong></a> – if the schedules contain channels with non-uniform sampling rates</p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><em>Playlist</em></p>
@@ -1240,7 +1240,7 @@ unless some process has already finalised them before calling this function.</p>
 a warning is raised.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>op_name</strong> (<em>str</em>) – </p>
+<dd class="field-odd"><p><strong>op_name</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – </p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><em>None</em></p>
@@ -1365,7 +1365,7 @@ a warning is raised.</p>
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on 2025-02-20.
+  Last updated on 2025-02-21.
   <br/>
 </p>
   </div>

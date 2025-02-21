@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>QuantumOp &#8212; iqm.pulse 7.23 documentation</title>
+    <title>QuantumOp &#8212; iqm.pulse 7.24 documentation</title>
   
   
   
@@ -41,7 +41,7 @@
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../_static/documentation_options.js?v=65175d8a"></script>
+    <script src="../_static/documentation_options.js?v=9456aa4a"></script>
     <script src="../_static/doctools.js?v=888ff710"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
@@ -53,8 +53,8 @@
     <link rel="prev" title="iqm.pulse.quantum_ops.validate_op_calibration" href="iqm.pulse.quantum_ops.validate_op_calibration.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="7.23" />
-    <meta name="docbuild:last-update" content="2025-02-20"/>
+  <meta name="docsearch:version" content="7.24" />
+    <meta name="docbuild:last-update" content="2025-02-21"/>
   </head>
   
   
@@ -133,8 +133,8 @@
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="iqm.pulse 7.23 documentation - Home"/>
-    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="iqm.pulse 7.23 documentation - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="iqm.pulse 7.24 documentation - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="iqm.pulse 7.24 documentation - Home"/>
   
   
 </a></div>
@@ -397,7 +397,7 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="iqm.pulse.quantum_ops.QuantumOp">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">iqm.pulse.quantum_ops.</span></span><span class="sig-name descname"><span class="pre">QuantumOp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arity</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params=()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">implementations=&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symmetric=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">factorizable=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defaults_for_locus=&lt;factory&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">unitary=None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iqm.pulse.quantum_ops.QuantumOp" title="Link to this definition">#</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.11/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Describes a native quantum operation type.</p>
 <p><em>Quantum operations</em> (or “ops” in short), are simple, abstract, self-contained actions one can
 execute on a station as parts of a quantum circuit. They include quantum gates, measurements,
@@ -484,26 +484,26 @@ its own, independent set of calibration data for each locus.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>name</strong> (<em>str</em>) – </p></li>
-<li><p><strong>arity</strong> (<em>int</em>) – </p></li>
-<li><p><strong>params</strong> (<em>tuple</em><em>[</em><em>str</em><em>, </em><em>...</em><em>]</em>) – </p></li>
-<li><p><strong>implementations</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><em>type</em><em>[</em><a class="reference internal" href="iqm.pulse.gate_implementation.GateImplementation.html#iqm.pulse.gate_implementation.GateImplementation" title="iqm.pulse.gate_implementation.GateImplementation"><em>GateImplementation</em></a><em>]</em><em>]</em>) – </p></li>
-<li><p><strong>symmetric</strong> (<em>bool</em>) – </p></li>
-<li><p><strong>factorizable</strong> (<em>bool</em>) – </p></li>
-<li><p><strong>defaults_for_locus</strong> (<em>dict</em><em>[</em><em>tuple</em><em>[</em><em>str</em><em>, </em><em>...</em><em>]</em><em>, </em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – </p></li>
+<li><p><strong>arity</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – </p></li>
+<li><p><strong>params</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#tuple" title="(in Python v3.11)"><em>tuple</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>...</em><em>]</em>) – </p></li>
+<li><p><strong>implementations</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><em>dict</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3.11/library/functions.html#type" title="(in Python v3.11)"><em>type</em></a><em>[</em><a class="reference internal" href="iqm.pulse.gate_implementation.GateImplementation.html#iqm.pulse.gate_implementation.GateImplementation" title="iqm.pulse.gate_implementation.GateImplementation"><em>GateImplementation</em></a><em>]</em><em>]</em>) – </p></li>
+<li><p><strong>symmetric</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – </p></li>
+<li><p><strong>factorizable</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – </p></li>
+<li><p><strong>defaults_for_locus</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><em>dict</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#tuple" title="(in Python v3.11)"><em>tuple</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>...</em><em>]</em><em>, </em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>]</em>) – </p></li>
 <li><p><strong>unitary</strong> (<em>Callable</em><em>[</em><em>...</em><em>, </em><em>np.ndarray</em><em>] </em><em>| </em><em>None</em>) – </p></li>
 </ul>
 </dd>
 </dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="iqm.pulse.quantum_ops.QuantumOp.name">
-<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#iqm.pulse.quantum_ops.QuantumOp.name" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></em><a class="headerlink" href="#iqm.pulse.quantum_ops.QuantumOp.name" title="Link to this definition">#</a></dt>
 <dd><p>Unique name of the operation.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="iqm.pulse.quantum_ops.QuantumOp.arity">
-<span class="sig-name descname"><span class="pre">arity</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#iqm.pulse.quantum_ops.QuantumOp.arity" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">arity</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></em><a class="headerlink" href="#iqm.pulse.quantum_ops.QuantumOp.arity" title="Link to this definition">#</a></dt>
 <dd><p>Number of locus components the operation acts on.
 Each locus component corresponds to a quantum subsystem in the definition of the operation.
 The computational subspace always consists of the lowest two levels of the subsystem.
@@ -512,13 +512,13 @@ Zero means the operation can be applied on any number of locus components.</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="iqm.pulse.quantum_ops.QuantumOp.params">
-<span class="sig-name descname"><span class="pre">params</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="headerlink" href="#iqm.pulse.quantum_ops.QuantumOp.params" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">params</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#tuple" title="(in Python v3.11)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">()</span></em><a class="headerlink" href="#iqm.pulse.quantum_ops.QuantumOp.params" title="Link to this definition">#</a></dt>
 <dd><p>Names of required operation parameters, if any.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="iqm.pulse.quantum_ops.QuantumOp.implementations">
-<span class="sig-name descname"><span class="pre">implementations</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">type</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="iqm.pulse.gate_implementation.GateImplementation.html#iqm.pulse.gate_implementation.GateImplementation" title="iqm.pulse.gate_implementation.GateImplementation"><span class="pre">GateImplementation</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#iqm.pulse.quantum_ops.QuantumOp.implementations" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">implementations</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/functions.html#type" title="(in Python v3.11)"><span class="pre">type</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="iqm.pulse.gate_implementation.GateImplementation.html#iqm.pulse.gate_implementation.GateImplementation" title="iqm.pulse.gate_implementation.GateImplementation"><span class="pre">GateImplementation</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#iqm.pulse.quantum_ops.QuantumOp.implementations" title="Link to this definition">#</a></dt>
 <dd><p>Maps implementation names to <a class="reference internal" href="iqm.pulse.gate_implementation.GateImplementation.html#iqm.pulse.gate_implementation.GateImplementation" title="iqm.pulse.gate_implementation.GateImplementation"><code class="xref py py-class docutils literal notranslate"><span class="pre">GateImplementation</span></code></a> classes that provide them.
 Each such class should describe the implementation in detail in its docstring.
 The implementations are in the dict in priority order, highest-priority (default) first. This global priority
@@ -527,14 +527,14 @@ order can be overridden per locus by the attribute <code class="docutils literal
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="iqm.pulse.quantum_ops.QuantumOp.symmetric">
-<span class="sig-name descname"><span class="pre">symmetric</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#iqm.pulse.quantum_ops.QuantumOp.symmetric" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">symmetric</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#iqm.pulse.quantum_ops.QuantumOp.symmetric" title="Link to this definition">#</a></dt>
 <dd><p>True iff the effect of operation is symmetric in the quantum subsystems it acts on.
 Only meaningful if <code class="docutils literal notranslate"><span class="pre">self.arity</span> <span class="pre">!=</span> <span class="pre">1</span></code>.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="iqm.pulse.quantum_ops.QuantumOp.factorizable">
-<span class="sig-name descname"><span class="pre">factorizable</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#iqm.pulse.quantum_ops.QuantumOp.factorizable" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">factorizable</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/functions.html#bool" title="(in Python v3.11)"><span class="pre">bool</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">False</span></em><a class="headerlink" href="#iqm.pulse.quantum_ops.QuantumOp.factorizable" title="Link to this definition">#</a></dt>
 <dd><p>True iff the operation is always factorizable to independent single-subsystem operations, which
 is also how it is implemented, for example parallel single-qubit measurements.
 In this case the operation calibration data is for individual subsystems as well.</p>
@@ -542,7 +542,7 @@ In this case the operation calibration data is for individual subsystems as well
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="iqm.pulse.quantum_ops.QuantumOp.defaults_for_locus">
-<span class="sig-name descname"><span class="pre">defaults_for_locus</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#iqm.pulse.quantum_ops.QuantumOp.defaults_for_locus" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">defaults_for_locus</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#tuple" title="(in Python v3.11)"><span class="pre">tuple</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#iqm.pulse.quantum_ops.QuantumOp.defaults_for_locus" title="Link to this definition">#</a></dt>
 <dd><p>Optionally define the implementation default individually per each locus. Maps the locus to the default
 gate implementation name. If a locus is not found in this dict (by default, the dict is empty), falls back to the
 global order defined in <code class="docutils literal notranslate"><span class="pre">implementations</span></code>. The implementations must be first registered in <code class="docutils literal notranslate"><span class="pre">implementations</span></code>.</p>
@@ -550,7 +550,7 @@ global order defined in <code class="docutils literal notranslate"><span class="
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="iqm.pulse.quantum_ops.QuantumOp.unitary">
-<span class="sig-name descname"><span class="pre">unitary</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">np.ndarray</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#iqm.pulse.quantum_ops.QuantumOp.unitary" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">unitary</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Callable</span><span class="p"><span class="pre">[</span></span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">np.ndarray</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#iqm.pulse.quantum_ops.QuantumOp.unitary" title="Link to this definition">#</a></dt>
 <dd><p>Unitary matrix that represents the effect of this quantum operation in the computational basis, or <code class="docutils literal notranslate"><span class="pre">None</span></code>
 if the quantum operation is not unitary or the exact unitary is not known.
 The Callable needs to take exactly the arguments given in <a class="reference internal" href="#iqm.pulse.quantum_ops.QuantumOp.params" title="iqm.pulse.quantum_ops.QuantumOp.params"><code class="xref py py-attr docutils literal notranslate"><span class="pre">params</span></code></a>, for example if
@@ -572,7 +572,7 @@ For operations acting on more than 1 qubit, unitary should be given in the big-e
 
 <dl class="py property">
 <dt class="sig sig-object py" id="iqm.pulse.quantum_ops.QuantumOp.default_implementation">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">default_implementation</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">str</span></em><a class="headerlink" href="#iqm.pulse.quantum_ops.QuantumOp.default_implementation" title="Link to this definition">#</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">default_implementation</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a></em><a class="headerlink" href="#iqm.pulse.quantum_ops.QuantumOp.default_implementation" title="Link to this definition">#</a></dt>
 <dd><p>Name of the default implementation (the global default).</p>
 </dd></dl>
 
@@ -582,10 +582,10 @@ For operations acting on more than 1 qubit, unitary should be given in the big-e
 <dd><p>Sets the given implementation as the default.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>default</strong> (<em>str</em>) – name of the new default implementation</p>
+<dd class="field-odd"><p><strong>default</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – name of the new default implementation</p>
 </dd>
 <dt class="field-even">Raises<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>ValueError</strong> – <code class="docutils literal notranslate"><span class="pre">default</span></code> is unknown or is a special implementation.</p>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.11/library/exceptions.html#ValueError" title="(in Python v3.11)"><strong>ValueError</strong></a> – <code class="docutils literal notranslate"><span class="pre">default</span></code> is unknown or is a special implementation.</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><em>None</em></p>
@@ -600,13 +600,13 @@ For operations acting on more than 1 qubit, unitary should be given in the big-e
 <p>If no locus-specific priority is defined, returns the global default.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>locus</strong> (<em>Iterable</em><em>[</em><em>str</em><em>]</em>) – tuple of component names defining the locus.</p>
+<dd class="field-odd"><p><strong>locus</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/typing.html#typing.Iterable" title="(in Python v3.11)"><em>Iterable</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>]</em>) – tuple of component names defining the locus.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>The default implementation name.</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><em>str</em></p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -618,12 +618,12 @@ For operations acting on more than 1 qubit, unitary should be given in the big-e
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>default</strong> (<em>str</em>) – name of the new default implementation for <code class="docutils literal notranslate"><span class="pre">locus</span></code>.</p></li>
-<li><p><strong>locus</strong> (<em>Iterable</em><em>[</em><em>str</em><em>]</em>) – tuple of component names defining the locus.</p></li>
+<li><p><strong>default</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – name of the new default implementation for <code class="docutils literal notranslate"><span class="pre">locus</span></code>.</p></li>
+<li><p><strong>locus</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/typing.html#typing.Iterable" title="(in Python v3.11)"><em>Iterable</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>]</em>) – tuple of component names defining the locus.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Raises<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>ValueError</strong> – if there is no implementation defined with the name <code class="docutils literal notranslate"><span class="pre">default</span></code> or <code class="docutils literal notranslate"><span class="pre">default</span></code> is a special
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.11/library/exceptions.html#ValueError" title="(in Python v3.11)"><strong>ValueError</strong></a> – if there is no implementation defined with the name <code class="docutils literal notranslate"><span class="pre">default</span></code> or <code class="docutils literal notranslate"><span class="pre">default</span></code> is a special
     implementation.</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
@@ -727,7 +727,7 @@ For operations acting on more than 1 qubit, unitary should be given in the big-e
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on 2025-02-20.
+  Last updated on 2025-02-21.
   <br/>
 </p>
   </div>

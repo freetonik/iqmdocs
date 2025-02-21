@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>FluxPulseGate &#8212; iqm.pulse 7.23 documentation</title>
+    <title>FluxPulseGate &#8212; iqm.pulse 7.24 documentation</title>
   
   
   
@@ -41,7 +41,7 @@
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../_static/documentation_options.js?v=65175d8a"></script>
+    <script src="../_static/documentation_options.js?v=9456aa4a"></script>
     <script src="../_static/doctools.js?v=888ff710"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
@@ -53,8 +53,8 @@
     <link rel="prev" title="CouplerFluxPulseQubitACStarkPulseGate" href="iqm.pulse.gates.cz.CouplerFluxPulseQubitACStarkPulseGate.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="7.23" />
-    <meta name="docbuild:last-update" content="2025-02-20"/>
+  <meta name="docsearch:version" content="7.24" />
+    <meta name="docbuild:last-update" content="2025-02-21"/>
   </head>
   
   
@@ -133,8 +133,8 @@
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="iqm.pulse 7.23 documentation - Home"/>
-    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="iqm.pulse 7.23 documentation - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="iqm.pulse 7.24 documentation - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="iqm.pulse 7.24 documentation - Home"/>
   
   
 </a></div>
@@ -410,7 +410,7 @@ to all the channels where it would otherwise apply flux pulses or virtual z rota
 <li><p><strong>flux_pulses</strong> – mapping from flux channel name to its flux pulse</p></li>
 <li><p><strong>rz</strong> – mapping from drive channel name to the virtual z rotation angle, in radians, that should be performed on it</p></li>
 <li><p><strong>parent</strong> (<a class="reference internal" href="iqm.pulse.quantum_ops.QuantumOp.html#iqm.pulse.quantum_ops.QuantumOp" title="iqm.pulse.quantum_ops.QuantumOp"><em>QuantumOp</em></a>) – </p></li>
-<li><p><strong>name</strong> (<em>str</em>) – </p></li>
+<li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – </p></li>
 <li><p><strong>locus</strong> (<em>Locus</em>) – </p></li>
 <li><p><strong>calibration_data</strong> (<em>OILCalibrationData</em>) – </p></li>
 <li><p><strong>builder</strong> (<a class="reference internal" href="iqm.pulse.builder.ScheduleBuilder.html#iqm.pulse.builder.ScheduleBuilder" title="iqm.pulse.builder.ScheduleBuilder"><em>ScheduleBuilder</em></a>) – </p></li>
@@ -450,26 +450,26 @@ to all the channels where it would otherwise apply flux pulses or virtual z rota
 </div>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="iqm.pulse.gates.cz.FluxPulseGate.coupler_wave">
-<span class="sig-name descname"><span class="pre">coupler_wave</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">type</span><span class="p"><span class="pre">[</span></span><span class="pre">Waveform</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#iqm.pulse.gates.cz.FluxPulseGate.coupler_wave" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">coupler_wave</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/functions.html#type" title="(in Python v3.11)"><span class="pre">type</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Waveform</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></em><a class="headerlink" href="#iqm.pulse.gates.cz.FluxPulseGate.coupler_wave" title="Link to this definition">#</a></dt>
 <dd><p>Flux pulse Waveform to be played in the coupler flux AWG.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="iqm.pulse.gates.cz.FluxPulseGate.qubit_wave">
-<span class="sig-name descname"><span class="pre">qubit_wave</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">type</span><span class="p"><span class="pre">[</span></span><span class="pre">Waveform</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#iqm.pulse.gates.cz.FluxPulseGate.qubit_wave" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">qubit_wave</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/functions.html#type" title="(in Python v3.11)"><span class="pre">type</span></a><span class="p"><span class="pre">[</span></span><span class="pre">Waveform</span><span class="p"><span class="pre">]</span></span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></em><a class="headerlink" href="#iqm.pulse.gates.cz.FluxPulseGate.qubit_wave" title="Link to this definition">#</a></dt>
 <dd><p>Flux pulse Waveform to be played in the qubit flux AWG.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="iqm.pulse.gates.cz.FluxPulseGate.root_parameters">
-<span class="sig-name descname"><span class="pre">root_parameters</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Parameter</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Setting</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'duration':</span> <span class="pre">Parameter(name='',</span> <span class="pre">label='Gate</span> <span class="pre">duration',</span> <span class="pre">unit='s',</span> <span class="pre">data_type=&lt;DataType.NUMBER:</span> <span class="pre">1&gt;,</span> <span class="pre">collection_type=&lt;CollectionType.SCALAR:</span> <span class="pre">0&gt;,</span> <span class="pre">element_indices=None,</span> <span class="pre">_parent_name=None,</span> <span class="pre">_parent_label=None),</span> <span class="pre">'rz':</span> <span class="pre">{'*':</span> <span class="pre">Parameter(name='',</span> <span class="pre">label='Z</span> <span class="pre">rotation</span> <span class="pre">angle',</span> <span class="pre">unit='rad',</span> <span class="pre">data_type=&lt;DataType.NUMBER:</span> <span class="pre">1&gt;,</span> <span class="pre">collection_type=&lt;CollectionType.SCALAR:</span> <span class="pre">0&gt;,</span> <span class="pre">element_indices=None,</span> <span class="pre">_parent_name=None,</span> <span class="pre">_parent_label=None)}}</span></em><a class="headerlink" href="#iqm.pulse.gates.cz.FluxPulseGate.root_parameters" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">root_parameters</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Parameter</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">Setting</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'duration':</span> <span class="pre">Parameter(name='',</span> <span class="pre">label='Gate</span> <span class="pre">duration',</span> <span class="pre">unit='s',</span> <span class="pre">data_type=&lt;DataType.NUMBER:</span> <span class="pre">1&gt;,</span> <span class="pre">collection_type=&lt;CollectionType.SCALAR:</span> <span class="pre">0&gt;,</span> <span class="pre">element_indices=None,</span> <span class="pre">_parent_name=None,</span> <span class="pre">_parent_label=None),</span> <span class="pre">'rz':</span> <span class="pre">{'*':</span> <span class="pre">Parameter(name='',</span> <span class="pre">label='Z</span> <span class="pre">rotation</span> <span class="pre">angle',</span> <span class="pre">unit='rad',</span> <span class="pre">data_type=&lt;DataType.NUMBER:</span> <span class="pre">1&gt;,</span> <span class="pre">collection_type=&lt;CollectionType.SCALAR:</span> <span class="pre">0&gt;,</span> <span class="pre">element_indices=None,</span> <span class="pre">_parent_name=None,</span> <span class="pre">_parent_label=None)}}</span></em><a class="headerlink" href="#iqm.pulse.gates.cz.FluxPulseGate.root_parameters" title="Link to this definition">#</a></dt>
 <dd><p>Parameters shared by all <code class="docutils literal notranslate"><span class="pre">FluxPulseGate</span></code> classes. Inheriting classes may override this if there’s
 a need for additional calibration parameters.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="iqm.pulse.gates.cz.FluxPulseGate.excluded_parameters">
-<span class="sig-name descname"><span class="pre">excluded_parameters</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#iqm.pulse.gates.cz.FluxPulseGate.excluded_parameters" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">excluded_parameters</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#list" title="(in Python v3.11)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#iqm.pulse.gates.cz.FluxPulseGate.excluded_parameters" title="Link to this definition">#</a></dt>
 <dd><p>Parameters names to be excluded from <code class="docutils literal notranslate"><span class="pre">self.parameters</span></code>. Inheriting classes may override this if certain
 parameters are not wanted in that class (also parameters defined by the waveforms can be excluded).</p>
 </dd></dl>
@@ -495,7 +495,7 @@ in the signature) is sufficient. Any additional caching may also be implemented 
 Subclasses can reimplement this method in case it makes sense in their context.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><em>float</em></p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.11/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -509,15 +509,15 @@ override this for different behaviour.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>operation_name</strong> (<em>str</em>) – name of the quantum operation.</p></li>
-<li><p><strong>implementation_name</strong> (<em>str</em>) – name of the implementation</p></li>
+<li><p><strong>operation_name</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – name of the quantum operation.</p></li>
+<li><p><strong>implementation_name</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – name of the implementation</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>name of the locus mapping</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><em>str</em></p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -611,7 +611,7 @@ override this for different behaviour.</p>
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on 2025-02-20.
+  Last updated on 2025-02-21.
   <br/>
 </p>
   </div>

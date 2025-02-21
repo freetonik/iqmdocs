@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>CompositeGate &#8212; iqm.pulse 7.23 documentation</title>
+    <title>CompositeGate &#8212; iqm.pulse 7.24 documentation</title>
   
   
   
@@ -41,7 +41,7 @@
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../_static/documentation_options.js?v=65175d8a"></script>
+    <script src="../_static/documentation_options.js?v=9456aa4a"></script>
     <script src="../_static/doctools.js?v=888ff710"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
@@ -53,8 +53,8 @@
     <link rel="prev" title="CompositeCache" href="iqm.pulse.gate_implementation.CompositeCache.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="7.23" />
-    <meta name="docbuild:last-update" content="2025-02-20"/>
+  <meta name="docsearch:version" content="7.24" />
+    <meta name="docbuild:last-update" content="2025-02-21"/>
   </head>
   
   
@@ -133,8 +133,8 @@
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="iqm.pulse 7.23 documentation - Home"/>
-    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="iqm.pulse 7.23 documentation - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="iqm.pulse 7.24 documentation - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="iqm.pulse 7.24 documentation - Home"/>
   
   
 </a></div>
@@ -425,7 +425,7 @@ with the common calibration.</p>
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>parent</strong> (<a class="reference internal" href="iqm.pulse.quantum_ops.QuantumOp.html#iqm.pulse.quantum_ops.QuantumOp" title="iqm.pulse.quantum_ops.QuantumOp"><em>QuantumOp</em></a>) – </p></li>
-<li><p><strong>name</strong> (<em>str</em>) – </p></li>
+<li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – </p></li>
 <li><p><strong>locus</strong> (<em>Locus</em>) – </p></li>
 <li><p><strong>calibration_data</strong> (<em>OILCalibrationData</em>) – </p></li>
 <li><p><strong>builder</strong> (<a class="reference internal" href="iqm.pulse.builder.ScheduleBuilder.html#iqm.pulse.builder.ScheduleBuilder" title="iqm.pulse.builder.ScheduleBuilder"><em>ScheduleBuilder</em></a>) – </p></li>
@@ -434,7 +434,7 @@ with the common calibration.</p>
 </dl>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="iqm.pulse.gate_implementation.CompositeGate.registered_gates">
-<span class="sig-name descname"><span class="pre">registered_gates</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#iqm.pulse.gate_implementation.CompositeGate.registered_gates" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">registered_gates</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#list" title="(in Python v3.11)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[]</span></em><a class="headerlink" href="#iqm.pulse.gate_implementation.CompositeGate.registered_gates" title="Link to this definition">#</a></dt>
 <dd><p>Gates that can be calibrated separately from their common calibration existing in <code class="docutils literal notranslate"><span class="pre">self.builder</span></code>. The gate
 names should correspond to the keys in <code class="docutils literal notranslate"><span class="pre">self.builder.op_table</span></code>. Other gates besides the ones given here can
 also be constructed via <code class="docutils literal notranslate"><span class="pre">self.builder</span></code>, but these will always use the common calibration.</p>
@@ -442,7 +442,7 @@ also be constructed via <code class="docutils literal notranslate"><span class="
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="iqm.pulse.gate_implementation.CompositeGate.default_implementations">
-<span class="sig-name descname"><span class="pre">default_implementations</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#iqm.pulse.gate_implementation.CompositeGate.default_implementations" title="Link to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">default_implementations</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#iqm.pulse.gate_implementation.CompositeGate.default_implementations" title="Link to this definition">#</a></dt>
 <dd><p>Mapping from operation names to the designated default implementation of that operation. Filling this attribute
 allows one to define a different default implementation from the common default in <code class="docutils literal notranslate"><span class="pre">self.builder.op_table</span></code> to
 be used in he context of this composite gate. If an operation is not found in this dict as a key, this
@@ -461,11 +461,11 @@ common calibration will be used.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>op_name</strong> (<em>str</em>) – operation name</p></li>
-<li><p><strong>locus</strong> (<em>tuple</em><em>[</em><em>str</em><em>, </em><em>...</em><em>]</em>) – locus the operation acts on</p></li>
-<li><p><strong>impl_name</strong> (<em>str</em><em> | </em><em>None</em>) – Implementation name. If not given, uses the default implementation defined in the class instance
+<li><p><strong>op_name</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – operation name</p></li>
+<li><p><strong>locus</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#tuple" title="(in Python v3.11)"><em>tuple</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>...</em><em>]</em>) – locus the operation acts on</p></li>
+<li><p><strong>impl_name</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em> | </em><em>None</em>) – Implementation name. If not given, uses the default implementation defined in the class instance
 if any, and otherwise the common default in <code class="docutils literal notranslate"><span class="pre">self.builder.op_table</span></code></p></li>
-<li><p><strong>strict_locus</strong> (<em>bool</em>) – iff False, for non-symmetric implementations of symmetric ops the locus order may
+<li><p><strong>strict_locus</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – iff False, for non-symmetric implementations of symmetric ops the locus order may
 be changed if no calibration data is available for the requested locus order</p></li>
 </ul>
 </dd>
@@ -563,7 +563,7 @@ be changed if no calibration data is available for the requested locus order</p>
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on 2025-02-20.
+  Last updated on 2025-02-21.
   <br/>
 </p>
   </div>

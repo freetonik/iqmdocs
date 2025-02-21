@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Slepian &#8212; iqm.pulse 7.23 documentation</title>
+    <title>Slepian &#8212; iqm.pulse 7.24 documentation</title>
   
   
   
@@ -41,7 +41,7 @@
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../_static/documentation_options.js?v=65175d8a"></script>
+    <script src="../_static/documentation_options.js?v=9456aa4a"></script>
     <script src="../_static/doctools.js?v=888ff710"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
@@ -55,8 +55,8 @@
     <link rel="prev" title="ModulatedCosineRiseFall" href="iqm.pulse.playlist.waveforms.ModulatedCosineRiseFall.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="7.23" />
-    <meta name="docbuild:last-update" content="2025-02-20"/>
+  <meta name="docsearch:version" content="7.24" />
+    <meta name="docbuild:last-update" content="2025-02-21"/>
   </head>
   
   
@@ -135,8 +135,8 @@
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="iqm.pulse 7.23 documentation - Home"/>
-    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="iqm.pulse 7.23 documentation - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="iqm.pulse 7.24 documentation - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="iqm.pulse 7.24 documentation - Home"/>
   
   
 </a></div>
@@ -409,18 +409,18 @@ heavy.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>full_width</strong> (<em>float</em>) – Duration of the support of the waveform.</p></li>
-<li><p><strong>lambda_1</strong> (<em>float</em>) – First coefficient of Slepian waveform.</p></li>
-<li><p><strong>lambda_2</strong> (<em>float</em>) – Second coefficient of Slepian waveform.</p></li>
-<li><p><strong>frequency_initial_normalized</strong> (<em>float</em>) – Initial frequency of the pulsed component (usually coupler),
+<li><p><strong>full_width</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – Duration of the support of the waveform.</p></li>
+<li><p><strong>lambda_1</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – First coefficient of Slepian waveform.</p></li>
+<li><p><strong>lambda_2</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – Second coefficient of Slepian waveform.</p></li>
+<li><p><strong>frequency_initial_normalized</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – Initial frequency of the pulsed component (usually coupler),
 normalized by the maximum frequency of the pulsed component.</p></li>
-<li><p><strong>frequency_to_minimize_normalized</strong> (<em>float</em>) – Frequency of the static component (usually qubit) which to
+<li><p><strong>frequency_to_minimize_normalized</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – Frequency of the static component (usually qubit) which to
 minimize the leakage from/to, normalized by the maximum frequency of the pulsed component.</p></li>
-<li><p><strong>coupling_strength_normalized</strong> (<em>float</em>) – Coupling strength between pulsed component and static component,
+<li><p><strong>coupling_strength_normalized</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – Coupling strength between pulsed component and static component,
 normalized by the maximum frequency of the pulsed component.</p></li>
-<li><p><strong>center_offset</strong> (<em>float</em>) – The waveform is centered at this offset from the midpoint of the sampling window.</p></li>
-<li><p><strong>squid_asymmetry</strong> (<em>float</em>) – Squid asymmetry.</p></li>
-<li><p><strong>n_samples</strong> (<em>int</em>) – </p></li>
+<li><p><strong>center_offset</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – The waveform is centered at this offset from the midpoint of the sampling window.</p></li>
+<li><p><strong>squid_asymmetry</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – Squid asymmetry.</p></li>
+<li><p><strong>n_samples</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – </p></li>
 </ul>
 </dd>
 </dl>
@@ -481,7 +481,7 @@ sampling window duration, and all frequency-like calibration data into units of 
 window duration.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><em>dict</em>[<em>str</em>, <em>str</em>]</p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><em>dict</em></a>[<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>, <a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -529,8 +529,8 @@ integrate the expression numerically with <a class="reference external" href="ht
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>tau</strong> (<em>float</em><em> | </em><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.2)"><em>ndarray</em></a>) – Time in the accelerated frame.</p></li>
-<li><p><strong>num_samples</strong> (<em>int</em>) – Number of samples for the numerical integration. Must be of the form 2 ** k + 1.</p></li>
+<li><p><strong>tau</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em> | </em><a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.ndarray.html#numpy.ndarray" title="(in NumPy v2.2)"><em>ndarray</em></a>) – Time in the accelerated frame.</p></li>
+<li><p><strong>num_samples</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – Number of samples for the numerical integration. Must be of the form 2 ** k + 1.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -651,7 +651,7 @@ It is usually sufficient to take only up to second order terms into account, i.e
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on 2025-02-20.
+  Last updated on 2025-02-21.
   <br/>
 </p>
   </div>

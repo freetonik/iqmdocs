@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Schedule &#8212; iqm.pulse 7.23 documentation</title>
+    <title>Schedule &#8212; iqm.pulse 7.24 documentation</title>
   
   
   
@@ -41,7 +41,7 @@
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../_static/documentation_options.js?v=65175d8a"></script>
+    <script src="../_static/documentation_options.js?v=9456aa4a"></script>
     <script src="../_static/doctools.js?v=888ff710"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
@@ -53,8 +53,8 @@
     <link rel="prev" title="Nothing" href="iqm.pulse.playlist.schedule.Nothing.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="7.23" />
-    <meta name="docbuild:last-update" content="2025-02-20"/>
+  <meta name="docsearch:version" content="7.24" />
+    <meta name="docbuild:last-update" content="2025-02-21"/>
   </head>
   
   
@@ -133,8 +133,8 @@
       
     
     
-    <img src="../_static/logo.png" class="logo__image only-light" alt="iqm.pulse 7.23 documentation - Home"/>
-    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="iqm.pulse 7.23 documentation - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-light" alt="iqm.pulse 7.24 documentation - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="iqm.pulse 7.24 documentation - Home"/>
   
   
 </a></div>
@@ -402,7 +402,7 @@
 <dl class="py class">
 <dt class="sig sig-object py" id="iqm.pulse.playlist.schedule.Schedule">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">iqm.pulse.playlist.schedule.</span></span><span class="sig-name descname"><span class="pre">Schedule</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">contents</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#iqm.pulse.playlist.schedule.Schedule" title="Link to this definition">#</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.11/library/functions.html#object" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Set of synchronously executed AWG/readout programs that start on a single trigger.</p>
 <p>Consists of a number of <em>channels</em>, each containing a <a class="reference internal" href="iqm.pulse.playlist.schedule.Segment.html#iqm.pulse.playlist.schedule.Segment" title="iqm.pulse.playlist.schedule.Segment"><code class="xref py py-class docutils literal notranslate"><span class="pre">Segment</span></code></a> of
 <a class="reference internal" href="iqm.pulse.playlist.instructions.Instruction.html#iqm.pulse.playlist.instructions.Instruction" title="iqm.pulse.playlist.instructions.Instruction"><code class="xref py py-class docutils literal notranslate"><span class="pre">Instruction</span></code></a> s for a specific controller.  For each channel, maps the channel name to
@@ -411,8 +411,8 @@ its Segment of Instructions.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>contents</strong> (<em>Mapping</em><em>[</em><em>str</em><em>, </em><em>Iterable</em><em>[</em><a class="reference internal" href="iqm.pulse.playlist.instructions.Instruction.html#iqm.pulse.playlist.instructions.Instruction" title="iqm.pulse.playlist.instructions.Instruction"><em>Instruction</em></a><em>]</em><em>] </em><em>| </em><em>None</em>) – mapping from channel name to a list of Instructions for that channel</p></li>
-<li><p><strong>duration</strong> (<em>int</em><em> | </em><em>None</em>) – Optional precomputed duration (in samples). In cases where the duration is known and performance
+<li><p><strong>contents</strong> (<em>Mapping</em><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>Iterable</em><em>[</em><a class="reference internal" href="iqm.pulse.playlist.instructions.Instruction.html#iqm.pulse.playlist.instructions.Instruction" title="iqm.pulse.playlist.instructions.Instruction"><em>Instruction</em></a><em>]</em><em>] </em><em>| </em><em>None</em>) – mapping from channel name to a list of Instructions for that channel</p></li>
+<li><p><strong>duration</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em> | </em><em>None</em>) – Optional precomputed duration (in samples). In cases where the duration is known and performance
 is critical, the duration can be given in the constructor, allowing one to skip computing it.</p></li>
 </ul>
 </dd>
@@ -486,7 +486,7 @@ is critical, the duration can be given in the constructor, allowing one to skip 
 </div>
 <dl class="py property">
 <dt class="sig sig-object py" id="iqm.pulse.playlist.schedule.Schedule.duration">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">duration</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">int</span></em><a class="headerlink" href="#iqm.pulse.playlist.schedule.Schedule.duration" title="Link to this definition">#</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">duration</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.11/library/functions.html#int" title="(in Python v3.11)"><span class="pre">int</span></a></em><a class="headerlink" href="#iqm.pulse.playlist.schedule.Schedule.duration" title="Link to this definition">#</a></dt>
 <dd><p>The maximum duration of the Schedule’s channels, in samples.</p>
 <p>Computed only when needed and cached for performance.</p>
 </dd></dl>
@@ -497,13 +497,13 @@ is critical, the duration can be given in the constructor, allowing one to skip 
 <dd><p>Schedule duration in seconds, taking into account the sample rates of the channels.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>channel_properties</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><a class="reference internal" href="iqm.pulse.playlist.channel.ChannelProperties.html#iqm.pulse.playlist.channel.ChannelProperties" title="iqm.pulse.playlist.channel.ChannelProperties"><em>ChannelProperties</em></a><em>]</em>) – channel properties.</p>
+<dd class="field-odd"><p><strong>channel_properties</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><em>dict</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><a class="reference internal" href="iqm.pulse.playlist.channel.ChannelProperties.html#iqm.pulse.playlist.channel.ChannelProperties" title="iqm.pulse.playlist.channel.ChannelProperties"><em>ChannelProperties</em></a><em>]</em>) – channel properties.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>schedule duration (in seconds)</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><em>float</em></p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.11/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -515,10 +515,10 @@ is critical, the duration can be given in the constructor, allowing one to skip 
 <p>Assumes the <code class="xref py py-attr docutils literal notranslate"><span class="pre">Instruction.duration</span></code> s are in samples.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>time_unit</strong> (<em>int</em>) – unit of time represented by a single symbol (in samples)</p>
+<dd class="field-odd"><p><strong>time_unit</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – unit of time represented by a single symbol (in samples)</p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><em>str</em></p>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -535,7 +535,7 @@ is critical, the duration can be given in the constructor, allowing one to skip 
 <dd><p>The channels occupied in <code class="docutils literal notranslate"><span class="pre">self</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><em>KeysView</em></p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.11/library/collections.abc.html#collections.abc.KeysView" title="(in Python v3.11)"><em>KeysView</em></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -565,7 +565,7 @@ it is unchanged.</p>
 <p>Modifies <code class="docutils literal notranslate"><span class="pre">self</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>channel_names</strong> (<em>Iterable</em><em>[</em><em>str</em><em>]</em>) – names of the controllers for which empty channels are added</p>
+<dd class="field-odd"><p><strong>channel_names</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/collections.abc.html#collections.abc.Iterable" title="(in Python v3.11)"><em>Iterable</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>]</em>) – names of the controllers for which empty channels are added</p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><em>None</em></p>
@@ -580,7 +580,7 @@ it is unchanged.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>channel</strong> (<em>str</em>) – name of the channel to append the instruction to</p></li>
+<li><p><strong>channel</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – name of the channel to append the instruction to</p></li>
 <li><p><strong>instruction</strong> (<a class="reference internal" href="iqm.pulse.playlist.instructions.Instruction.html#iqm.pulse.playlist.instructions.Instruction" title="iqm.pulse.playlist.instructions.Instruction"><em>Instruction</em></a>) – instruction to append</p></li>
 </ul>
 </dd>
@@ -597,8 +597,8 @@ it is unchanged.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>channel</strong> (<em>str</em>) – name of the channel to append the instructions to</p></li>
-<li><p><strong>instructions</strong> (<em>Iterable</em><em>[</em><a class="reference internal" href="iqm.pulse.playlist.instructions.Instruction.html#iqm.pulse.playlist.instructions.Instruction" title="iqm.pulse.playlist.instructions.Instruction"><em>Instruction</em></a><em>]</em>) – instructions to append</p></li>
+<li><p><strong>channel</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – name of the channel to append the instructions to</p></li>
+<li><p><strong>instructions</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/collections.abc.html#collections.abc.Iterable" title="(in Python v3.11)"><em>Iterable</em></a><em>[</em><a class="reference internal" href="iqm.pulse.playlist.instructions.Instruction.html#iqm.pulse.playlist.instructions.Instruction" title="iqm.pulse.playlist.instructions.Instruction"><em>Instruction</em></a><em>]</em>) – instructions to append</p></li>
 </ul>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
@@ -615,7 +615,7 @@ it is unchanged.</p>
 case, use the method <code class="docutils literal notranslate"><span class="pre">front_pad_in_seconds</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>to_duration</strong> (<em>int</em>) – duration of the resulting schedule, in samples</p>
+<dd class="field-odd"><p><strong>to_duration</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – duration of the resulting schedule, in samples</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">self</span></code>, with the padding</p>
@@ -634,8 +634,8 @@ case, use the method <code class="docutils literal notranslate"><span class="pre
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>channel_properties</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><a class="reference internal" href="iqm.pulse.playlist.channel.ChannelProperties.html#iqm.pulse.playlist.channel.ChannelProperties" title="iqm.pulse.playlist.channel.ChannelProperties"><em>ChannelProperties</em></a><em>]</em>) – channel properties.</p></li>
-<li><p><strong>to_duration</strong> (<em>float</em>) – </p></li>
+<li><p><strong>channel_properties</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><em>dict</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><a class="reference internal" href="iqm.pulse.playlist.channel.ChannelProperties.html#iqm.pulse.playlist.channel.ChannelProperties" title="iqm.pulse.playlist.channel.ChannelProperties"><em>ChannelProperties</em></a><em>]</em>) – channel properties.</p></li>
+<li><p><strong>to_duration</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – </p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
@@ -667,7 +667,7 @@ difference between the channel’s duration and the maximum duration is larger t
 instruction duration for that channel.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>channel_properties</strong> (<em>dict</em><em>[</em><em>str</em><em>, </em><a class="reference internal" href="iqm.pulse.playlist.channel.ChannelProperties.html#iqm.pulse.playlist.channel.ChannelProperties" title="iqm.pulse.playlist.channel.ChannelProperties"><em>ChannelProperties</em></a><em>]</em>) – channel properties (containing the sampling rates and granularities).</p>
+<dd class="field-odd"><p><strong>channel_properties</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#dict" title="(in Python v3.11)"><em>dict</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><a class="reference internal" href="iqm.pulse.playlist.channel.ChannelProperties.html#iqm.pulse.playlist.channel.ChannelProperties" title="iqm.pulse.playlist.channel.ChannelProperties"><em>ChannelProperties</em></a><em>]</em>) – channel properties (containing the sampling rates and granularities).</p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><em>None</em></p>
@@ -725,7 +725,7 @@ if <code class="docutils literal notranslate"><span class="pre">self</span></cod
 <dd><p>Validate the contents of the schedule.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>path</strong> (<em>tuple</em><em>[</em><em>str</em><em>, </em><em>...</em><em>]</em>) – </p>
+<dd class="field-odd"><p><strong>path</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#tuple" title="(in Python v3.11)"><em>tuple</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>...</em><em>]</em>) – </p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><em>None</em></p>
@@ -739,10 +739,10 @@ if <code class="docutils literal notranslate"><span class="pre">self</span></cod
 <dd><p>Returns <code class="docutils literal notranslate"><span class="pre">True</span></code> if <code class="docutils literal notranslate"><span class="pre">self</span></code> has content in any of the given channels, otherwise <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>channel_names</strong> (<em>Iterable</em><em>[</em><em>str</em><em>]</em>) – </p>
+<dd class="field-odd"><p><strong>channel_names</strong> (<a class="reference external" href="https://docs.python.org/3.11/library/collections.abc.html#collections.abc.Iterable" title="(in Python v3.11)"><em>Iterable</em></a><em>[</em><a class="reference external" href="https://docs.python.org/3.11/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>]</em>) – </p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><em>bool</em></p>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.11/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -847,7 +847,7 @@ if <code class="docutils literal notranslate"><span class="pre">self</span></cod
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on 2025-02-20.
+  Last updated on 2025-02-21.
   <br/>
 </p>
   </div>
